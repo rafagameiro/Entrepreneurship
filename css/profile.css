@@ -1,0 +1,60 @@
+.profile-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar-nav > li > #profiledrop, .navbar-nav > li > #dropdown-menu > li > div > a {
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.navbar-nav > li > .active {
+    color: rgb(134, 188, 37);
+}
+
+.navbar-nav > li > #profiledrop:hover, .navbar-nav > li > #dropdown-menu > li > div > a:hover {
+    color: rgb(134, 188, 37);
+    background-color: transparent;
+}
+
+#profile-names {
+    position: relative;
+    padding-top: 50%;
+}
+
+#profile-name,  #profile-status {
+    position: absolute;
+    left: 0;
+}
+
+#profile-name {
+    bottom: 15%;
+    font-size: 3vw;
+}
+
+#profile-status {
+    bottom: 0;
+    font-size: 2vw;
+}
+
+#profile-experience, #profile-achievements {
+    font-size: 1.5vw;
+}
+
+.package {
+    width: 130px;
+    height: 170px;
+    background-color: #1c7430;
+}
+
+@media screen and (max-width: 400px) {
+    #profile-name {
+        font-size: 6vw;
+    }
+
+    #profile-status, #profile-experience, #profile-achievements {
+        font-size: 5vw;
+    }
+}

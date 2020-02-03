@@ -1,0 +1,36 @@
+.profile-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar-nav > li > #profiledrop, .navbar-nav > li > #dropdown-menu > li > div > a {
+    color: black;
+    transition-duration: 0.3s;
+}
+
+.navbar-nav > li > .active {
+    color: rgb(134, 188, 37);
+}
+
+.navbar-nav > li > #profiledrop:hover, .navbar-nav > li > #dropdown-menu > li > div > a:hover {
+    color: rgb(134, 188, 37);
+    background-color: transparent;
+}
+
+.package {
+    width: 130px;
+    height: 170px;
+    background-color: #1c7430;
+}
+
+.fa-heart {
+    color: deeppink;
+}
+
+.buy-btn {
+    background-color: #ffc107;
+    bottom: 5%;
+    cursor: pointer;
+}
