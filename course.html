@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/Calliope_Logo.png">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/course.css">
+    <title>Course</title>
+</head>
+<body class="d-flex flex-column">
+
+<nav class="navbar navbar-expand-sm bg-dark">
+
+    <button class="navbar-toggler first-button" type="button" data-toggle="collapse">
+        <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button><!--navbar-toggler-->
+
+    <a class="navbar-brand" href="index.html">
+        <img alt="Calliope Logo" src="#">
+    </a><!--navbar-brand-->
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="courses.html">Courses</a>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="#">Forum</a>
+            </li><!--nav-item-->
+        </ul><!--nav-bar-->
+    </div><!--navbar-collapse-->
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item mt-2 mr-3">
+                <img class="flag-icon" src="images/1280px-Flag_of_Portugal.svg.png">
+            </li><!--nav-item-->
+            <li class="nav-item dropdown" style="color: white">
+                <a class="nav-link dropdown-toggle" href="#" id="profiledrop" data-toggle="dropdown">
+                    <img class="profile-photo" alt="profile photo" src="images/4vbLXq8.jpg">
+                    <span style="color: #f4faf5">Rafael Gameiro</span>
+                </a><!--dropdown-toggle-->
+                <ul class="dropdown-menu dropdown-menu-right mt-n1" id="dropdown-menu">
+                    <li>
+                        <div aria-labelledby="profiledrop">
+                            <a class="dropdown-item" href="profile.html">My Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Help</a>
+                            <a class="dropdown-item" href="index.html">Logout</a>
+                        </div>
+                    </li>
+                </ul><!--dropdown-menu-->
+            </li><!--dropdown-->
+        </ul><!--nav-bar-->
+    </div><!--navbar-collapse-->
+</nav><!--navbar-->
+
+<div class="container-fluid pt-5" style="background-color: #eb542e;">
+    <div class="container-fluid mt-5 pt-lg-5">
+        <div class="container-fluid mt-5 pt-3 pl-5">
+            <span style="font-size: 400%; color: #f7f8f7;">Cores</span>
+        </div><!--container-fluid-->
+    </div><!--container-fluid-->
+</div><!--container-fluid-->
+
+<div class="container-fluid flex-fill" style="background-color: #eecbb5;">
+    <div class="row h-100">
+        <div class="d-none d-lg-block col-lg-3 ml-3">
+
+        </div><!--column-->
+        <div class="col-12 col-lg-8 pt-5 pb-3">
+            <div class="container-fluid h-100 pt-5 bg-light">
+                <ul style="list-style-type: none; padding-left: 25px;">
+                    <li>
+                        <i class="fas fa-film"></i>
+                        <a href=""  data-toggle="modal" data-target="#videoModal">Cores I</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-lock"></i>
+                        <a href=""  data-toggle="modal" data-target="#videoModal">Cores II</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-lock"></i>
+                        <a href=""  data-toggle="modal" data-target="#videoModal">Exercicio Cores</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-lock"></i>
+                        <a href=""  data-toggle="modal" data-target="#videoModal">Tonalidades</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-lock"></i>
+                        <a href=""  data-toggle="modal" data-target="#videoModal">Exercicio Tonalidades</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-lock"></i>
+                        <a href=""  data-toggle="modal" data-target="#videoModal">Avaliação</a>
+                    </li>
+                </ul>
+            </div><!--container-fluid-->
+        </div><!--column-->
+    </div><!--row-->
+</div><!--container--fluid-->
+
+<div class="modal fade" id="videoModal">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Cores</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div><!--modal-header-->
+
+            <div class="modal-body">
+                <video class="video-fluid z-depth-1" controls>
+                    <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"/>
+                </video><!--video-fluid-->
+            </div><!--modal-body-->
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Next Video</button>
+            </div><!--modal-footer-->
+        </div><!--modal-content-->
+    </div><!--modal-dialog-->
+</div><!--modal-->
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>

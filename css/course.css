@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 .profile-photo {
     width: 30px;
     height: 30px;
@@ -19,23 +23,15 @@
     background-color: transparent;
 }
 
-.package {
-    width: 130px;
-    height: 170px;
-    background-color: #1c7430;
+.container-fluid > ul > li {
+    padding-bottom: 10px;
 }
 
-.fa-heart {
-    color: deeppink;
-}
-
-.buy-btn {
-    background-color: #ffc107;
-    bottom: 5%;
-    cursor: pointer;
-}
-
-div > a, div > a:hover {
+.container-fluid > ul > li > a {
     text-decoration: none;
+    color: black;
+}
+
+.container-fluid > ul > li > a:hover {
     color: black;
 }
