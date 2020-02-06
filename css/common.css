@@ -31,12 +31,12 @@ body {
     border: none;
 }
 
-.navbar-nav > li > #profiledrop, .navbar-nav > li > #dropdown-menu > li > div > a {
+.navbar-nav > li > .nav-link, .navbar-nav > li > #profiledrop, .navbar-nav > li > #dropdown-menu > li > div > a {
     color: #f6f7f9;
     transition-duration: 0.3s;
 }
 
-.navbar-nav > li > #profiledrop:hover, .navbar-nav > li > #dropdown-menu > li > div > a:hover {
+.navbar-nav > li > .nav-link:hover, .navbar-nav > li > #profiledrop:hover, .navbar-nav > li > #dropdown-menu > li > div > a:hover {
     background-color: #3c7bef;
 }
 
@@ -54,6 +54,12 @@ body {
 
 .btn-info {
     background-color: #2851a3;
+}
+
+@media screen and (min-width: 576px) {
+    #collapsibleNavbar {
+        display: none !important;
+    }
 }
 
 @media screen and (max-width: 767px) {
