@@ -1,22 +1,10 @@
-.profile-photo {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
+body {
+    background-color: #f6f7f9;
 }
 
-.navbar-nav > li > #profiledrop, .navbar-nav > li > #dropdown-menu > li > div > a {
-    color: black;
-    transition-duration: 0.3s;
-}
-
-.navbar-nav > li > .active {
-    color: rgb(134, 188, 37);
-}
-
-.navbar-nav > li > #profiledrop:hover, .navbar-nav > li > #dropdown-menu > li > div > a:hover {
-    color: rgb(134, 188, 37);
-    background-color: transparent;
+#profile-header {
+    background-color: #3c7bef;
+    color: #f6f7f9;
 }
 
 #profile-names {
@@ -41,6 +29,10 @@
 
 #profile-experience, #profile-achievements {
     font-size: 1.5vw;
+}
+
+.progress-bar {
+    background-color: #2851a3;
 }
 
 .package {

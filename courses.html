@@ -7,20 +7,21 @@
     <link rel="icon" href="images/Calliope_Logo.png">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/courses.css">
     <title>Courses</title>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-sm bg-dark">
+<nav class="navbar navbar-expand-sm">
 
     <button class="navbar-toggler first-button" type="button" data-toggle="collapse">
         <div class="animated-icon"><span></span><span></span><span></span></div>
     </button><!--navbar-toggler-->
 
     <a class="navbar-brand" href="index.html">
-        <img alt="Calliope Logo" src="#">
+        <img class="img-fluid logo" alt="Calliope Logo" src="images/Calliope_Logo&Sign.png">
     </a><!--navbar-brand-->
 
     <div class="collapse navbar-collapse">
@@ -39,7 +40,7 @@
             <li class="nav-item mt-2 mr-3">
                 <img class="flag-icon" src="images/1280px-Flag_of_Portugal.svg.png">
             </li><!--nav-item-->
-            <li class="nav-item dropdown" style="color: white">
+            <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="profiledrop" data-toggle="dropdown">
                     <img class="profile-photo" alt="profile photo" src="images/4vbLXq8.jpg">
                     <span>Rafael Gameiro</span>
@@ -59,7 +60,7 @@
     </div><!--navbar-collapse-->
 </nav><!--navbar-->
 
-<div class="container-fluid mb-4 p-3 bg-info">
+<div class="container-fluid mb-4 p-3" id="filter-header">
     <div class="container-fluid w-50">
         <select class="mdb-select md-form ml-5 mr-5">
             <option value="" disabled selected>Idioma</option>
@@ -89,7 +90,7 @@
             <option value="3">Option 3</option>
         </select><!--mdb-select-->
 
-        <button type="button" class="btn btn-primary">Search</button>
+        <button type="button" class="btn btn-filter">Search</button>
     </div><!--container-fluid-->
 </div><!--container-fluid-->
 
