@@ -19,3 +19,9 @@ video {
     height: 100%;
     object-fit: cover;
 }
+
+@media screen and (min-width: 576px) {
+    #collapsibleNavbar {
+        display: flex !important;
+    }
+}
