@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+}
+
+.cart-header {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cart-divisions {
+    font-size: 15px;
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+
+.row > div > img {
+    width: 150px;
+}
+
+h5 {
+    font-weight: bold;
+}
+

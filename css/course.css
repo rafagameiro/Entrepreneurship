@@ -20,3 +20,8 @@ html, body {
 .container-fluid > ul > li > a:hover {
     color: black;
 }
+
+video {
+    width: 100%;
+    height: auto;
+}
