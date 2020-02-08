@@ -21,3 +21,17 @@ h5 {
     font-weight: bold;
 }
 
+.course-name {
+    color: black;
+}
+
+.course-name:hover {
+    color: black;
+}
+
+.btn-remove {
+    font-size: smaller;
+    color: darkgrey;
+    cursor: pointer;
+}
+
