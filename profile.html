@@ -131,8 +131,16 @@
                         </div><!--column-->
                     </div><!--row-->
                 </div><!--container-fluid-->
-                <span id="profile-achievements" data-toggle="collapse" data-target="#achievements">Achievements</span>
-                <span data-toggle="modal" data-target="#edit-profile"><i class="fas fa-wrench"></i></span>
+                <div class="container-fluid m-0 p-0">
+                    <div class="row m-0 p-0">
+                        <div class="col m-0 p-0 text-left">
+                            <span id="profile-achievements" data-toggle="collapse" data-target="#achievements">Achievements</span>
+                        </div><!--column-->
+                        <div class="col m-0 p-0 pt-2 pr-3 text-right">
+                            <span data-toggle="modal" data-target="#edit-profile"><i class="fas fa-wrench"></i></span>
+                        </div><!--column-->
+                    </div><!--row-->
+                </div><!--container-fluid-->
             </div><!--text-->
         </div><!--column-->
     </div><!--row-->
@@ -541,6 +549,66 @@
         <i class="far fa-copyright"></i> <i>Copyright 2020.</i>
     </div><!--container-fluid-->
 </footer>
+
+<div class="modal fade" id="edit-profile">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Editar perfil</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div><!--modal-header-->
+
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <form>
+                                <div class="form-group">
+                                    <label for="user-name">Primeiro e último nome:</label>
+                                    <input type="text" class="form-control" id="user-name">
+
+                                    <label for="username">Username:</label>
+                                    <input type="text" class="form-control" id="username">
+
+                                    <label for="email">Email:</label>
+                                    <input type="text" class="form-control" id="email">
+
+                                    <label for="status">Titulo:</label>
+                                    <input type="text" class="form-control" id="status">
+
+                                    <label for="pwd">Nova password:</label>
+                                    <input type="password" class="form-control" id="pwd">
+
+                                    <label for="pwd-confirm">Verificar password:</label>
+                                    <input type="password" class="form-control" id="pwd-confirm">
+                                </div><!--form-group-->
+                            </form>
+                        </div><!--column-->
+                        <div class="col-12 col-lg-5 text-center">
+                            <div class="container-fluid m-0 p-0 ">
+                                <div class="container p-0 mt-5 mb-5 circular--portrait">
+                                    <img class="rounded-circle" alt="profile photo" src="images/4vbLXq8.jpg">
+                                </div><!--container-->
+                            </div><!--container-fluid-->
+                            <div class="container-fluid w-50">
+                                <button type="button" class="btn btn-sm btn-primary">Foto de perfil</button>
+                            </div><!--container-fluid-->
+                        </div><!--column-->
+                    </div><!--row-->
+                </div><!--container-fluid-->
+            </div><!--modal-body-->
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#videoModal1"
+                        data-dismiss="modal">Cancelar
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoModal1"
+                        data-dismiss="modal">Guardar
+                </button>
+            </div><!--modal-footer-->
+        </div><!--modal-content-->
+    </div><!--modal-dialog-->
+</div><!--modal-->
 
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>

@@ -66,6 +66,18 @@ body {
     background-color: #6aade1;
 }
 
+.fa-wrench {
+    cursor: pointer;
+}
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+label {
+    font-weight: bold;
+}
+
 .achievement-medal {
     position: relative;
     min-width: 100px;

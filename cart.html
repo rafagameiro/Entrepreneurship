@@ -103,7 +103,7 @@
 
 <div class="container-fluid mt-5">
     <div class="row">
-        <div class="col-10 pl-3 pr-0">
+        <div class="col-12 col-lg-10 mb-5 mb-lg-0 pl-lg-3 pr-lg-0">
             <div class="container-fluid cart-header m-0 pl-4 bg-white">
                 Carrinho
             </div><!--container-fluid-->
@@ -113,24 +113,24 @@
                 </div><!--container-fluid-->
             </div><!--container-fluid-->
             <div class="row ml-0 mr-0 bg-white">
-                <div class="col-2 p-3 text-center">
+                <div class="col-2 p-1 pt-3 p-lg-3 text-center">
                     <img class="img-fluid" alt="course image" src="images/Modules/Teste5.png">
                 </div><!--column-->
-                <div class="col-9 p-3">
+                <div class="col-7 col-sm-8 col-md-9 p-3">
                     <a class="course-name mt-3" href="course.html">Animals</a><br>
                     <span class="btn-remove">Remover</span>
                 </div><!--column-->
                 <div class="col-1 pt-3 pr-4 text-right">
                     9.99€
                 </div><!--column-->
-                <div class="col-12 pl-4 pr-4">
+                <div class="col-12 pl-1 pl-lg-4 pr-1 pr-lg-4">
                     <div class="container-fluid cart-divisions m-0 p-0">
                     </div><!--container-fluid-->
                 </div><!--column-->
-                <div class="col-2 p-3 text-center">
+                <div class="col-2 p-1 pt-3 p-lg-3 text-center">
                     <img class="img-fluid" alt="course image" src="images/Modules/Teste5.png">
                 </div><!--column-->
-                <div class="col-9 p-3">
+                <div class="col-7 col-sm-8 col-md-9 p-3">
                     <a class="course-name mt-3" href="course.html">Animals</a><br>
                     <span class="btn-remove">Remover</span>
                 </div><!--column-->
@@ -139,7 +139,7 @@
                 </div><!--column-->
             </div><!--row-->
         </div><!--column-->
-        <div class="col-2">
+        <div class="col-12 col-lg-2">
             <div class="container p-3 bg-white text-center">
                 <h5>Subtotal(2 itens): 19.98€</h5>
                 <button type="button" class="btn btn-primary mt-4 mb-1" data-toggle="modal" data-target="#paymentModal">
@@ -172,21 +172,21 @@
                     <div class="container tab-pane active" id="start">
                         <p>Por favor selecione um método de pagamento:</p>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-12 mb-3 col-lg-4 mb-0">
                                 <div class="container-fluid pt-2 h-100 border">
                                     <a data-toggle="tab" href="#card-method">
                                         <img class="img-fluid" alt="mastercard logo" src="images/mastercard.png">
                                     </a>
                                 </div><!--container-fluid-->
                             </div><!--column-->
-                            <div class="col-4">
+                            <div class="col-12 mb-3 col-lg-4 mb-0">
                                 <div class="container-fluid h-100 border">
                                     <a data-toggle="tab" href="#card-method">
                                         <img class="img-fluid" alt="visa logo" src="images/visa.jpg">
                                     </a>
                                 </div><!--container-fluid-->
                             </div><!--column-->
-                            <div class="col-4">
+                            <div class="col-12 mb-3 col-lg-4 mb-0">
                                 <div class="container-fluid h-100 border">
                                     <a data-toggle="tab" href="#paypal-method">
                                         <img class="img-fluid" alt="paypal logo" src="images/paypal.jpg">
@@ -198,13 +198,13 @@
                     <div class="container tab-pane fade" id="card-method">
                         <form>
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="card-number">Card number:</label>
                                         <input class="form-control" id="card-number">
                                     </div><!--form-group-->
                                 </div><!--column-->
-                                <div class="col-6">
+                                <div class="col-12 col-lg-6">
                                     <div class="form-group">
                                         <label for="card-cvc">CVC:</label>
                                         <input class="form-control" id="card-cvc">
@@ -215,8 +215,11 @@
                     </div>
                     <div class="container tab-pane fade" id="paypal-method">
                         <div class="form-group">
-                            <label for="email">Email address:</label>
-                            <input class="form-control w-50" id="email">
+                            <label class="d-none d-lg-block" for="email1">Email address:</label>
+                            <input class="d-none d-lg-block form-control w-50" id="email1">
+
+                            <label for="email2">Email address:</label>
+                            <input class="d-lg-none d-block form-control w-100" id="email2">
                         </div><!--form-group-->
                     </div>
                 </div><!--tab-content-->
