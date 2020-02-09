@@ -25,6 +25,7 @@ body {
 
 .fa-heart {
     color: deeppink;
+    cursor: pointer;
 }
 
 .buy-btn {

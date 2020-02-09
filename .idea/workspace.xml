@@ -10,8 +10,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
@@ -29,8 +31,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/Program Files/nodejs/node.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
+    <property name="nodejs_package_manager_path" value="D:/Program Files/nodejs/node_modules/npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -57,7 +62,9 @@
       <workItem from="1581109912936" duration="7036000" />
       <workItem from="1581158830285" duration="4834000" />
       <workItem from="1581175556620" duration="8432000" />
-      <workItem from="1581196011701" duration="5104000" />
+      <workItem from="1581196011701" duration="6143000" />
+      <workItem from="1581204195895" duration="209000" />
+      <workItem from="1581241621415" duration="6354000" />
     </task>
     <servers />
   </component>
@@ -65,17 +72,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580579235590">
+    <state x="583" y="199" key="#Plugins" timestamp="1581246464750">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1580579235590" />
-    <state x="492" y="183" key="SettingsEditor" timestamp="1580902729714">
+    <state x="583" y="199" key="#Plugins/62.0.1858.1080@62.0.1858.1080" timestamp="1581246464750" />
+    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581204211537">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="492" y="183" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1580902729714" />
+    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1581204211537" />
+    <state x="771" y="295" key="FileChooserDialogImpl" timestamp="1581247859750">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1581247859750" />
+    <state x="492" y="183" key="SettingsEditor" timestamp="1581247875633">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="492" y="183" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1581247875633" />
     <state x="647" y="250" key="run.anything.popup" timestamp="1580571708999">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="647" y="250" key="run.anything.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1580571708999" />
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1581247834840">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1581247834840" />
   </component>
 </project>
