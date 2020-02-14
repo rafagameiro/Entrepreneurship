@@ -26,7 +26,7 @@
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item mt-2 mr-3">
-                <a class="nav-link" href="courses.html">Courses</a>
+                <a class="nav-link" href="courses.html">Cursos</a>
             </li><!--nav-item-->
             <li class="nav-item mt-2 mr-3">
                 <a class="nav-link" href="#">Forum</a>
@@ -53,9 +53,9 @@
                 <ul class="dropdown-menu dropdown-menu-right mt-n1" id="dropdown-menu">
                     <li>
                         <div aria-labelledby="profiledrop">
-                            <a class="dropdown-item" href="profile.html">My Profile</a>
-                            <a class="dropdown-item" href="settings.html">Settings</a>
-                            <a class="dropdown-item" href="help.html">Help</a>
+                            <a class="dropdown-item" href="profile.html">Meu Perfil</a>
+                            <a class="dropdown-item" href="settings.html">Definições</a>
+                            <a class="dropdown-item" href="help.html">Ajuda</a>
                             <a class="dropdown-item" href="index.html">Logout</a>
                         </div>
                     </li>
@@ -83,16 +83,16 @@
                 </a><!--nav-link-->
             </li><!--nav-item-->
             <li class="nav-item mt-2 mr-3">
-                <a class="nav-link" href="courses.html">Courses</a>
+                <a class="nav-link" href="courses.html">Cursos</a>
             </li><!--nav-item-->
             <li class="nav-item mt-2 mr-3">
                 <a class="nav-link" href="#">Forum</a>
             </li><!--nav-item-->
             <li class="nav-item mt-2 mr-3">
-                <a class="nav-link" href="settings.html">Settings</a>
+                <a class="nav-link" href="settings.html">Definições</a>
             </li><!--nav-item-->
             <li class="nav-item mt-2 mr-3">
-                <a class="nav-link" href="help.html">Help</a>
+                <a class="nav-link" href="help.html">Ajuda</a>
             </li><!--nav-item-->
             <li class="nav-item mt-2 mr-3">
                 <a class="nav-link" href="index.html">Logout</a>
@@ -112,32 +112,9 @@
                     Preço
                 </div><!--container-fluid-->
             </div><!--container-fluid-->
-            <div class="row ml-0 mr-0 bg-white">
-                <div class="col-2 p-1 pt-3 p-lg-3 text-center">
-                    <img class="img-fluid" alt="course image" src="images/Modules/Teste5.png">
-                </div><!--column-->
-                <div class="col-7 col-sm-8 col-md-9 p-3">
-                    <a class="course-name mt-3" href="course.html">Animals</a><br>
-                    <span class="btn-remove">Remover</span>
-                </div><!--column-->
-                <div class="col-1 pt-3 pr-4 text-right">
-                    9.99€
-                </div><!--column-->
-                <div class="col-12 pl-1 pl-lg-4 pr-1 pr-lg-4">
-                    <div class="container-fluid cart-divisions m-0 p-0">
-                    </div><!--container-fluid-->
-                </div><!--column-->
-                <div class="col-2 p-1 pt-3 p-lg-3 text-center">
-                    <img class="img-fluid" alt="course image" src="images/Modules/Teste5.png">
-                </div><!--column-->
-                <div class="col-7 col-sm-8 col-md-9 p-3">
-                    <a class="course-name mt-3" href="course.html">Animals</a><br>
-                    <span class="btn-remove">Remover</span>
-                </div><!--column-->
-                <div class="col-1 pt-3 pr-4 text-right">
-                    9.99€
-                </div><!--column-->
-            </div><!--row-->
+            <div class="container-fluid m-0 p-0 bg-white" id="shop-cart">
+
+            </div><!--container-fluid-->
         </div><!--column-->
         <div class="col-12 col-lg-2">
             <div class="container p-3 bg-white text-center">
@@ -150,7 +127,7 @@
     </div><!--row-->
 </div><!--container-fluid-->
 
-<div class="container flex-fill p-lg-5 p-3" id="root">
+<div class="container flex-fill p-lg-5 p-3">
 </div><!--container-->
 
 <footer>
@@ -200,7 +177,7 @@
                             <div class="row">
                                 <div class="col-12 col-lg-6">
                                     <div class="form-group">
-                                        <label for="card-number">Card number:</label>
+                                        <label for="card-number">Número cartão:</label>
                                         <input class="form-control" id="card-number">
                                     </div><!--form-group-->
                                 </div><!--column-->
@@ -215,10 +192,10 @@
                     </div>
                     <div class="container tab-pane fade" id="paypal-method">
                         <div class="form-group">
-                            <label class="d-none d-lg-block" for="email1">Email address:</label>
+                            <label class="d-none d-lg-block" for="email1">Endereço email:</label>
                             <input class="d-none d-lg-block form-control w-50" id="email1">
 
-                            <label for="email2">Email address:</label>
+                            <label for="email2">Endereço email:</label>
                             <input class="d-lg-none d-block form-control w-100" id="email2">
                         </div><!--form-group-->
                     </div>
@@ -236,6 +213,8 @@
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 <script type="text/javascript" src="js/cart.js"></script>
 </body>
 </html>

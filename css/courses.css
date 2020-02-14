@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #f6f7f9;
 }
@@ -17,20 +21,16 @@ body {
     background-color: #1666db;
 }
 
-.package {
-    width: 130px;
-    height: 170px;
-    background-color: #1c7430;
+.figure {
+    cursor: pointer;
+}
+
+.figure-caption {
+    font-size: 18px;
 }
 
 .fa-heart {
     color: deeppink;
-    cursor: pointer;
-}
-
-.buy-btn {
-    background-color: #ffc107;
-    bottom: 5%;
     cursor: pointer;
 }
 

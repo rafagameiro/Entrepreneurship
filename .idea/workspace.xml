@@ -12,8 +12,8 @@
       <list>
         <option value="CSS File" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -31,7 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Program Files/nodejs/node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../teste" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="D:/Program Files/nodejs/node_modules/npm" />
@@ -65,6 +65,10 @@
       <workItem from="1581196011701" duration="6143000" />
       <workItem from="1581204195895" duration="209000" />
       <workItem from="1581241621415" duration="6354000" />
+      <workItem from="1581445780457" duration="17263000" />
+      <workItem from="1581507878915" duration="7530000" />
+      <workItem from="1581526928080" duration="3718000" />
+      <workItem from="1581532978863" duration="5999000" />
     </task>
     <servers />
   </component>
@@ -76,14 +80,14 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="583" y="199" key="#Plugins/62.0.1858.1080@62.0.1858.1080" timestamp="1581246464750" />
-    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581204211537">
+    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581526940364">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1581204211537" />
-    <state x="771" y="295" key="FileChooserDialogImpl" timestamp="1581247859750">
+    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1581526940364" />
+    <state x="771" y="295" key="FileChooserDialogImpl" timestamp="1581451120349">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1581247859750" />
+    <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1581451120349" />
     <state x="492" y="183" key="SettingsEditor" timestamp="1581247875633">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
