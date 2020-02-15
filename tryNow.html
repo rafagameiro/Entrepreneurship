@@ -46,17 +46,18 @@
 
 <!-- FILTROS -->
 <div class="container-fluid mb-4 p-3" id="filter-header">
-    <div class="container-fluid w-50">
+    <div class="container-fluid w-75">
 
         <div class="row mb-2 align-self-center justify-content-center">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#learningLanguageModal">
+            <button type="button" class="btn btn-primary mb-lg-0 mb-2" data-toggle="modal"
+                    data-target="#learningLanguageModal">
                 Idioma
                 <img class="flag-icon" src="images/Flags/Portuguese%20Flag.png">
             </button>
 
-            &nbsp &nbsp &nbsp &nbsp <!-- Space Code -->
+            <span class="d-none d-lg-block">&nbsp &nbsp &nbsp &nbsp</span> <!-- Space Code -->
 
-            <div class="m-0" style="background-color:#1566DB; border-radius:5px; height:38.4px">
+            <div class="m-0 mb-lg-0 mb-2" style="background-color:#1566DB; border-radius:5px; height:38.4px">
                 <p style="padding:6px 12px">Dificuldade:
 
                     <i class="far fa-star"></i>
@@ -65,9 +66,9 @@
                 </p>
             </div>
 
-            &nbsp &nbsp &nbsp &nbsp <!-- Space Code -->
+            <span class="d-none d-lg-block">&nbsp &nbsp &nbsp &nbsp</span> <!-- Space Code -->
 
-            <div class="btn-group-toggle" data-toggle="buttons">
+            <div class="btn-group-toggle mb-lg-0 mb-2" data-toggle="buttons">
                 <label class="btn btn-primary active">
                     <input type="checkbox" checked autocomplete="off"> Versão Kids
                     <i class="far fa-laugh"></i>
@@ -270,11 +271,13 @@
                 <form name="login" accept-charset="utf-8">
                     <div class="form-group">
                         <label for="login-email">Email:</label>
-                        <input type="email" class="form-control" id="login-email" placeholder="Inserir email" name="login-email">
+                        <input type="email" class="form-control" id="login-email" placeholder="Inserir email"
+                               name="login-email">
                     </div><!--form-group-->
                     <div class="form-group">
                         <label for="login-pwd">Password:</label>
-                        <input type="password" class="form-control" id="login-pwd" placeholder="Inserir password" name="login-pwd">
+                        <input type="password" class="form-control" id="login-pwd" placeholder="Inserir password"
+                               name="login-pwd">
                     </div><!--form-group-->
                     <div class="container-fluid text-center">
                         <button type="button" class="btn btn-primary" id="btn-login">Entrar</button>
@@ -323,12 +326,16 @@
                         <div class="col-12 col-lg-5 text-center">
                             <div class="container-fluid m-0 p-0 ">
                                 <div class="container p-0 mt-5 mb-5 circular--portrait">
-                                    <img class="rounded-circle" id="photo-preview" alt="profile photo" src="images/4vbLXq8.jpg">
+                                    <img class="rounded-circle" id="photo-preview" alt="profile photo"
+                                         src="images/4vbLXq8.jpg">
                                 </div><!--container-->
                             </div><!--container-fluid-->
                             <div class="container-fluid w-50">
-                                <button type="button" class="btn btn-sm btn-primary" onclick="chooseFile();">Foto de perfil</button>
-                                <input class="rounded-circle" id="imageInput" style="height:0; overflow:hidden;" type="file"
+                                <button type="button" class="btn btn-sm btn-primary" onclick="chooseFile();">Foto de
+                                    perfil
+                                </button>
+                                <input class="rounded-circle" id="imageInput" style="height:0; overflow:hidden;"
+                                       type="file"
                                        onchange="readURL(this); getFileData(this);" accept="image/*">
                             </div><!--container-fluid-->
                         </div><!--column-->
