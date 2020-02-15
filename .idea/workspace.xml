@@ -10,9 +10,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="package.json" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -31,13 +31,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../teste" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="D:/Program Files/nodejs/node_modules/npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Rafael Gameiro\Documents\Programming\entrepreneurship" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Rafael Gameiro\Documents\Programming\entrepreneurship\images" />
     </key>
@@ -69,6 +72,7 @@
       <workItem from="1581507878915" duration="7530000" />
       <workItem from="1581526928080" duration="3718000" />
       <workItem from="1581532978863" duration="5999000" />
+      <workItem from="1581715807098" duration="11074000" />
     </task>
     <servers />
   </component>

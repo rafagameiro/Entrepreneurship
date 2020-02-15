@@ -51,8 +51,7 @@ class coursesList extends React.Component {
                                 e(
                                     'i',
                                     {
-                                        className: "far fa-heart",
-                                        onClick: "this.teste"
+                                        className: "far fa-heart"
                                     }
                                 ),
                                 e(
@@ -65,7 +64,7 @@ class coursesList extends React.Component {
                                 'div',
                                 {className: "container-fluid m-0 mt-2 p-0"},
                                 e(
-                                    'button',//TODO add data-toggle
+                                    'button',
                                     {
                                         className: "btn btn-sm btn-buy btn-primary font-weight-bold w-100"
                                     },
