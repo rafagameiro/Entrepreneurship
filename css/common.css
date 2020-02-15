@@ -61,6 +61,14 @@ body {
     background-color: #2851a3;
 }
 
+.btn-warning {
+    background-color: #b98942;
+}
+
+.btn-danger {
+    background-color: #f44336;
+}
+
 @media screen and (min-width: 576px) {
     #collapsibleNavbar {
         display: none !important;
