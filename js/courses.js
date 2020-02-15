@@ -5,20 +5,24 @@ class coursesList extends React.Component {
         super(props);
     }
 
-    addBuyOption() {
-        if (!this.props.has) {
-            return e(
-                'div',
-                {className: "container-fluid m-0 mt-2 p-0"},
-                e(
-                    'button',
-                    {
-                        className: "btn btn-sm btn-buy btn-primary font-weight-bold w-100"
-                    },
-                    'Comprar'
-                )
-            )
-        }
+    renderStars() {
+        let stars = this.props.stars;
+        let difficulty = [];
+        for (let i = 0; i < 3; i++, stars--)
+            if (stars > 0)
+                difficulty.push(
+                    e(
+                        'i',
+                        {className: "fas fa-star", style: {color: "rgb(224,206,39)"}}
+                    ));
+            else
+                difficulty.push(
+                    e(
+                        'i',
+                        {className: "far fa-star", style: {color: "rgb(224,206,39)"}}
+                    ));
+
+        return difficulty;
     }
 
     render() {
@@ -59,69 +63,30 @@ class coursesList extends React.Component {
                             ),
                             e(
                                 'div',
-                                {className: "container-fluid m-0 mt-4 mb-5 p-0", style: {letterSpacing: "10px"}},
+                                {className: "container-fluid m-0 mt-1 mb-2 p-0", style: {letterSpacing: "10px"}},
+                                this.renderStars(),
                                 e(
-                                    'i',
-                                    {className: "d-none fas fa-heart"}
-                                ),
-                                e(
-                                    'i',
-                                    {
-                                        className: "far fa-heart"
-                                    }
-                                ),
-                                e(
-                                    'span',
-                                    null,
-                                    this.props.likes
+                                    'div',
+                                    {className: "container-fluid m-0 mt-4 mb-4 p-0", style: {letterSpacing: "10px"}},
+                                    e(
+                                        'i',
+                                        {className: "d-none fas fa-heart"}
+                                    ),
+                                    e(
+                                        'i',
+                                        {
+                                            className: "far fa-heart"
+                                        }
+                                    ),
+                                    e(
+                                        'span',
+                                        null,
+                                        this.props.likes
+                                    )
                                 )
-                            ),
-                            this.addBuyOption()
+                            )
                         )
                     )
-                )
-            )
-        );
-    }
-}
-
-class modalBody extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return e(
-            'div',
-            {className: 'container-fluid m-0 p-0'},
-            "Este pacote contém os seguintes conteúdos:",
-            e(
-                'ul',
-                {style: {listStyleType: "disc", padding: "0 0 0 15px"}},
-                e(
-                    'li',
-                    null,
-                    this.props.first
-                ), e(
-                    'li',
-                    null,
-                    this.props.second
-                ), e(
-                    'li',
-                    null,
-                    this.props.third
-                ), e(
-                    'li',
-                    null,
-                    this.props.fourth
-                ), e(
-                    'li',
-                    null,
-                    this.props.fifth
-                ), e(
-                    'li',
-                    null,
-                    this.props.sixth
                 )
             )
         );
@@ -135,6 +100,9 @@ const courses = [
         title: 'Alfabeto',
         likes: 2,
         language: "Portuguese",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: true
     },
     {
@@ -143,6 +111,9 @@ const courses = [
         title: 'Calendário',
         likes: 2,
         language: "Portuguese",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: true
     },
     {
@@ -151,6 +122,9 @@ const courses = [
         title: 'Cores',
         likes: 1,
         language: "Portuguese",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: true
     },
     {
@@ -159,6 +133,9 @@ const courses = [
         title: 'Números',
         likes: 2,
         language: "Portuguese",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: true
     },
     {
@@ -167,6 +144,9 @@ const courses = [
         title: 'Alfabeto',
         likes: 2,
         language: "American",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -175,6 +155,9 @@ const courses = [
         title: 'Alfabeto',
         likes: 2,
         language: "British",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -183,6 +166,9 @@ const courses = [
         title: 'Alfabeto',
         likes: 2,
         language: "Australian",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -191,6 +177,9 @@ const courses = [
         title: 'Animais',
         likes: 2,
         language: "Portuguese",
+        stars: 2,
+        kids: false,
+        promotion: false,
         has: false
     }, {
         id: 9,
@@ -198,6 +187,9 @@ const courses = [
         title: 'Animais',
         likes: 2,
         language: "American",
+        stars: 2,
+        kids: false,
+        promotion: false,
         has: false
     }, {
         id: 10,
@@ -205,6 +197,9 @@ const courses = [
         title: 'Animais',
         likes: 2,
         language: "British",
+        stars: 2,
+        kids: false,
+        promotion: false,
         has: false
     }, {
         id: 11,
@@ -212,6 +207,9 @@ const courses = [
         title: 'Animais',
         likes: 2,
         language: "Australian",
+        stars: 2,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -220,6 +218,9 @@ const courses = [
         title: 'Calendário',
         likes: 2,
         language: "American",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -228,6 +229,9 @@ const courses = [
         title: 'Calendário',
         likes: 2,
         language: "British",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -236,6 +240,9 @@ const courses = [
         title: 'Calendário',
         likes: 2,
         language: "Australian",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -244,6 +251,9 @@ const courses = [
         title: 'Cores',
         likes: 2,
         language: "American",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -252,6 +262,9 @@ const courses = [
         title: 'Cores',
         likes: 2,
         language: "British",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -260,6 +273,9 @@ const courses = [
         title: 'Cores',
         likes: 2,
         language: "Australian",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -268,6 +284,9 @@ const courses = [
         title: 'Emoções',
         likes: 2,
         language: "Portuguese",
+        stars: 2,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -276,6 +295,9 @@ const courses = [
         title: 'Emoções',
         likes: 2,
         language: "American",
+        stars: 2,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -284,6 +306,9 @@ const courses = [
         title: 'Emoções',
         likes: 2,
         language: "British",
+        stars: 2,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -292,6 +317,9 @@ const courses = [
         title: 'Emoções',
         likes: 2,
         language: "Australian",
+        stars: 2,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -300,6 +328,9 @@ const courses = [
         title: 'Números',
         likes: 2,
         language: "American",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -308,6 +339,9 @@ const courses = [
         title: 'Números',
         likes: 2,
         language: "British",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
     {
@@ -316,241 +350,35 @@ const courses = [
         title: 'Números',
         likes: 2,
         language: "Australian",
+        stars: 1,
+        kids: false,
+        promotion: false,
         has: false
     },
 ];
 
-const courseInfo = [
-    {
-        id: 1,
-        title: 'Cores (LGP)',
-        first: "Cores I: Cores básicas",
-        second: 'Cores I: Cores básicas',
-        third: "Tonalidades",
-        fourth: "Frases relacionadas",
-        fifth: "Entre outros",
-        sixth: "..."
-    },
-    {
-        id: 2,
-        title: 'Cores (ASL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 3,
-        title: 'Cores (BSL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 4,
-        title: 'Cores (AUSLAN)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 5,
-        title: 'Emoções (LGP)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 6,
-        title: 'Emoções (ASL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 7,
-        title: 'Emoções (BSL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 8,
-        title: 'Emoções (AUSLAN)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 9,
-        title: 'Calendário (LGP)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 10,
-        title: 'Calendário (ASL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 11,
-        title: 'Calendário (BSL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 12,
-        title: 'Calendário (AUSLAN)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 13,
-        title: 'Alfabeto (LGP)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 14,
-        title: 'Alfabeto (ASL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 15,
-        title: 'Alfabeto (BSL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 16,
-        title: 'Alfabeto (AUSLAN)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 17,
-        title: 'Números (LGP)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 18,
-        title: 'Números (ASL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 19,
-        title: 'Números (BSL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 20,
-        title: 'Números (AUSLAN)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 21,
-        title: 'Animais (LGP)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 22,
-        title: 'Animais (ASL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 23,
-        title: 'Animais (BSL)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }, {
-        id: 24,
-        title: 'Animais (AUSLAN)',
-        first: "images/Modules/Colors/ColorsPortuguese.png",
-        second: 'Cores (LGP)',
-        third: 1,
-        fourth: "Portuguese",
-        fifth: "9,99",
-        sixth: "ola"
-    }
+let coursesFilter = courses;
 
-];
+listCourses(coursesList);
 
-ReactDOM.render(
-    courses.map(course => {
-        return e(coursesList, course)
-    }), document.getElementById('courses-catalog'));
+/**
+ * Lists all objects courses inside the array list
+ *
+ * @param list list of courses
+ */
+function listCourses(list) {
+    ReactDOM.render(
+        courses.map(course => {
+            return e(list, course)
+        }), document.getElementById('courses-catalog'));
 
-$('.fas.fa-heart').on('click', unlike);
-$('.far.fa-heart').on('click', like);
-$('.btn-buy').on('click', buy);
+    $('.fas.fa-heart').on('click', unlike);
+    $('.far.fa-heart').on('click', like);
+}
 
+/**
+ * Selects a flag inside the modal and based on that flag it will list the courses
+ */
 $('.figure').click(function () {
     $('.btn > img').attr('src', $(this).children('img').attr('src'));
     $('#learningLanguageModal').modal('hide');
@@ -562,7 +390,116 @@ $('.figure').click(function () {
 
     $('.fas.fa-heart').on('click', unlike);
     $('.far.fa-heart').on('click', like);
-    $('.btn-buy').on('click', buy);
+});
+
+const MAX_DIFFICULTY = 3;
+
+/**
+ * Resets the difficulty filter
+ */
+$('#difficulty-filter span').click(function () {
+    $('.difficulty-setter').addClass('far');
+    $('.difficulty-setter').removeClass('fas');
+    $('#difficulty-filter').css('background-color', '#1566db');
+
+    listCourses(coursesList);
+});
+
+/**
+ * Based on the clicked star, it will filter the courses through difficulty
+ */
+$('.difficulty-setter').click(function () {
+    let difficulty = $(this).attr('id').substring(5);
+    for (let i = 0; i < MAX_DIFFICULTY; i++) {
+        if (i < difficulty) {
+            $('#star-' + (i + 1)).removeClass('far');
+            $('#star-' + (i + 1)).addClass('fas');
+        } else {
+            $('#star-' + (i + 1)).addClass('far');
+            $('#star-' + (i + 1)).removeClass('fas');
+        }
+    }
+
+    ReactDOM.render(
+        courses.filter(course => course.stars === +difficulty).map(course => {
+            return e(coursesList, course)
+        }), document.getElementById('courses-catalog'));
+
+    $('#difficulty-filter').css('background-color', '#3b997a');
+    $('.fas.fa-heart').on('click', unlike);
+    $('.far.fa-heart').on('click', like);
+});
+
+/**
+ * Filters the courses to get ones that are specific for kids,
+ * and lists those courses
+ */
+$('#kids-filter').click(function () {
+    $(this).toggleClass('active');
+    let hasClass = $(this).hasClass('active');
+
+    if (hasClass)
+        $('#kids-filter').css('background-color', '#3b997a');
+    else
+        $('#kids-filter').css('background-color', '#1566db');
+
+    ReactDOM.render(
+        courses.filter(course => {
+            return hasClass ? course.kids : course;
+        }).map(course => {
+            return e(coursesList, course)
+        }), document.getElementById('courses-catalog'));
+
+    $('.fas.fa-heart').on('click', unlike);
+    $('.far.fa-heart').on('click', like);
+});
+
+/**
+ * Filters the courses to get ones that haven't been bought
+ * and lists those courses
+ */
+$('#can-buy-filter').click(function () {
+    $(this).toggleClass('active');
+    let hasClass = $(this).hasClass('active');
+
+    if (hasClass)
+        $('#can-buy-filter').css('background-color', '#3b997a');
+    else
+        $('#can-buy-filter').css('background-color', '#1566db');
+
+    ReactDOM.render(
+        courses.filter(course => {
+            return hasClass ? !course.has : course;
+        }).map(course => {
+            return e(coursesList, course)
+        }), document.getElementById('courses-catalog'));
+
+    $('.fas.fa-heart').on('click', unlike);
+    $('.far.fa-heart').on('click', like);
+});
+
+/**
+ * Filters the courses to get ones that are on sale
+ * and lists those courses
+ */
+$('#promotion-filter').click(function () {
+    $(this).toggleClass('active');
+    let hasClass = $(this).hasClass('active');
+
+    if (hasClass)
+        $('#promotion-filter').css('background-color', '#3b997a');
+    else
+        $('#promotion-filter').css('background-color', '#1566db');
+
+    ReactDOM.render(
+        courses.filter(course => {
+            return hasClass ? course.promotion : course;
+        }).map(course => {
+            return e(coursesList, course)
+        }), document.getElementById('courses-catalog'));
+
+    $('.fas.fa-heart').on('click', unlike);
+    $('.far.fa-heart').on('click', like);
 });
 
 /*
@@ -588,27 +525,3 @@ function like() {
     let num = $(this).siblings('span').text();
     $(this).siblings('span').text(+num + 1);
 }
-
-
-function buy() {
-    $('#priceModal').modal('toggle');
-    let image = $(this).parent().parent().parent().siblings('.col-5').children('a').children().attr('src');
-    let title = $(this).parent().siblings('a').children().text();
-    let price = courses.filter(course => course.title === title)[0].price;
-    $('#priceModal img').attr('src', image);
-    $('#priceModal .modal-title').text(title);
-    $('#priceModal .modal-footer span').text(price);
-    ReactDOM.render(
-        e(modalBody, courseInfo.filter(info => info.title === title)[0]
-        ), document.getElementById('price-modal-body'));
-}
-
-/*
-Add the package the user wants to buy to the shopping cart
-increments the cart counter by 1
-TODO add info to a real list with all the products the user wants to buy
- */
-$('.modal-footer .btn').click(function () {
-    let counter = $('.cart-counter').text();
-    $('.cart-counter').text(+counter.substring(1) + 1);
-});

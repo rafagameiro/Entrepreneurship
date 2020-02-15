@@ -11,14 +11,14 @@ body {
     color: #f6f7f9;
 }
 
-.btn-filter {
-    color: #f6f7f9;
-    background-color: #2851a3;
+#difficulty-filter {
+    background-color:#1566DB;
+    border-radius:5px;
+    height:38.4px;
 }
 
-.btn-filter:hover {
-    color: #f6f7f9;
-    background-color: #1666db;
+#difficulty-filter, .difficulty-setter {
+    cursor: pointer;
 }
 
 .figure {

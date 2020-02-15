@@ -38,11 +38,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Rafael Gameiro\Documents\Programming\entrepreneurship" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Rafael Gameiro\Documents\Programming\entrepreneurship\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Rafael Gameiro\Documents\Programming\entrepreneurship" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -73,7 +73,7 @@
       <workItem from="1581526928080" duration="3718000" />
       <workItem from="1581532978863" duration="5999000" />
       <workItem from="1581715807098" duration="12198000" />
-      <workItem from="1581766488854" duration="9505000" />
+      <workItem from="1581766488854" duration="14888000" />
     </task>
     <servers />
   </component>
