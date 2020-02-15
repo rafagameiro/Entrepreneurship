@@ -269,15 +269,17 @@
 
             <div class="modal-body">
                 <form name="login" accept-charset="utf-8">
-                    <div class="form-group">
+                    <div class="form-group mb-1">
                         <label for="login-email">Email:</label>
                         <input type="email" class="form-control" id="login-email" placeholder="Inserir email"
                                name="login-email">
+                        <span class="invalid-email">Endereço email inválido.</span>
                     </div><!--form-group-->
-                    <div class="form-group">
+                    <div class="form-group mt-0">
                         <label for="login-pwd">Password:</label>
                         <input type="password" class="form-control" id="login-pwd" placeholder="Inserir password"
                                name="login-pwd">
+                        <span id="login-error">Endereço email ou password incorretos.</span>
                     </div><!--form-group-->
                     <div class="container-fluid text-center">
                         <button type="button" class="btn btn-primary" id="btn-login">Entrar</button>
@@ -304,22 +306,24 @@
                             <form>
                                 <div class="form-group">
                                     <label for="user-name">Primeiro e último nome:</label>
-                                    <input type="text" class="form-control" id="user-name">
+                                    <input type="text" class="form-control mb-3" id="user-name">
 
                                     <label for="username">Username:</label>
-                                    <input type="text" class="form-control" id="username">
+                                    <input type="text" class="form-control mb-3" id="username">
 
                                     <label for="register-email">Email:</label>
                                     <input type="text" class="form-control" id="register-email">
+                                    <span class="invalid-email mb-0 w-100">Endereço email inválido.</span><br>
 
                                     <label for="status">Titulo:</label>
-                                    <input type="text" class="form-control" id="status">
+                                    <input type="text" class="form-control mb-3" id="status">
 
                                     <label for="register-pwd">Nova password:</label>
-                                    <input type="password" class="form-control" id="register-pwd">
+                                    <input type="password" class="form-control mb-3" id="register-pwd">
 
                                     <label for="pwd-confirm">Verificar password:</label>
                                     <input type="password" class="form-control" id="pwd-confirm">
+                                    <span id="pwd-error">As passwords não são iguais.</span>
                                 </div><!--form-group-->
                             </form>
                         </div><!--column-->
@@ -345,7 +349,7 @@
 
             <div class="modal-footer">
                 <span style="color: #f44336">Não é possível criar um conta agora, por favor tente mais tarde.</span>
-                <button type="button" class="btn btn-primary" data-dismiss="modal" disabled>Criar conta
+                <button type="button" class="btn btn-primary" id="btn-register" data-dismiss="modal" disabled>Criar conta
                 </button>
             </div><!--modal-footer-->
         </div><!--modal-content-->

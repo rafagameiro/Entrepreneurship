@@ -5,6 +5,22 @@ class coursesList extends React.Component {
         super(props);
     }
 
+    addBuyOption() {
+        if (!this.props.has) {
+            return e(
+                'div',
+                {className: "container-fluid m-0 mt-2 p-0"},
+                e(
+                    'button',
+                    {
+                        className: "btn btn-sm btn-buy btn-primary font-weight-bold w-100"
+                    },
+                    'Comprar'
+                )
+            )
+        }
+    }
+
     render() {
         return e(
             'div',
@@ -60,17 +76,7 @@ class coursesList extends React.Component {
                                     this.props.likes
                                 )
                             ),
-                            e(
-                                'div',
-                                {className: "container-fluid m-0 mt-2 p-0"},
-                                e(
-                                    'button',
-                                    {
-                                        className: "btn btn-sm btn-buy btn-primary font-weight-bold w-100"
-                                    },
-                                    'Comprar'
-                                )
-                            )
+                            this.addBuyOption()
                         )
                     )
                 )
@@ -125,192 +131,193 @@ class modalBody extends React.Component {
 const courses = [
     {
         id: 1,
-        image: "images/Modules/Colors/ColorsPortuguese.png",
-        title: 'Cores (LGP)',
-        likes: 1,
+        image: "images/Modules/Alphabet/AlphabetPortuguese.png",
+        title: 'Alfabeto',
+        likes: 2,
         language: "Portuguese",
-        price: "9,99"
+        has: true
     },
     {
         id: 2,
-        image: "images/Modules/Colors/ColorsAmerican.png",
-        title: 'Cores (ASL)',
+        image: "images/Modules/Calendar/CalendarPortuguese.png",
+        title: 'Calendário',
         likes: 2,
-        language: "American",
-        price: "9,99"
+        language: "Portuguese",
+        has: true
     },
     {
         id: 3,
-        image: "images/Modules/Colors/ColorsBritish.png",
-        title: 'Cores (BSL)',
-        likes: 2,
-        language: "British",
-        price: "9,99"
+        image: "images/Modules/Colors/ColorsPortuguese.png",
+        title: 'Cores',
+        likes: 1,
+        language: "Portuguese",
+        has: true
     },
     {
         id: 4,
-        image: "images/Modules/Colors/ColorsAustralian.png",
-        title: 'Cores (AUSLAN)',
+        image: "images/Modules/Numbers/NumbersPortuguese.png",
+        title: 'Números',
         likes: 2,
-        language: "Australian",
-        price: "9,99"
+        language: "Portuguese",
+        has: true
     },
     {
         id: 5,
-        image: "images/Modules/Emotions/EmotionsPortuguese.png",
-        title: 'Emoções (LGP)',
+        image: "images/Modules/Alphabet/AlphabetAmerican.png",
+        title: 'Alfabeto',
         likes: 2,
-        language: "Portuguese",
-        price: "9,99"
+        language: "American",
+        has: false
     },
     {
         id: 6,
-        image: "images/Modules/Emotions/EmotionsAmerican.png",
-        title: 'Emoções (ASL)',
+        image: "images/Modules/Alphabet/AlphabetBritish.png",
+        title: 'Alfabeto',
         likes: 2,
-        language: "American",
-        price: "9,99"
+        language: "British",
+        has: false
     },
     {
         id: 7,
-        image: "images/Modules/Emotions/EmotionsBritish.png",
-        title: 'Emoções (BSL)',
+        image: "images/Modules/Alphabet/AlphabetAustralian.png",
+        title: 'Alfabeto',
         likes: 2,
-        language: "British",
-        price: "9,99"
+        language: "Australian",
+        has: false
     },
     {
         id: 8,
-        image: "images/Modules/Emotions/EmotionsAustralian.png",
-        title: 'Emoções (AUSLAN)',
-        likes: 2,
-        language: "Australian",
-        price: "9,99"
-    },
-    {
-        id: 9,
-        image: "images/Modules/Calendar/CalendarPortuguese.png",
-        title: 'Calendário (LGP)',
+        image: "images/Modules/Animals/AnimalsPortuguese.png",
+        title: 'Animais',
         likes: 2,
         language: "Portuguese",
-        price: "9,99"
-    },
-    {
-        id: 10,
-        image: "images/Modules/Calendar/CalendarAmerican.png",
-        title: 'Calendário (ASL)',
+        has: false
+    }, {
+        id: 9,
+        image: "images/Modules/Animals/AnimalsAmerican.png",
+        title: 'Animais',
         likes: 2,
         language: "American",
-        price: "9,99"
-    },
-    {
-        id: 11,
-        image: "images/Modules/Calendar/CalendarBritish.png",
-        title: 'Calendário (BSL)',
+        has: false
+    }, {
+        id: 10,
+        image: "images/Modules/Animals/AnimalsBritish.png",
+        title: 'Animais',
         likes: 2,
         language: "British",
-        price: "9,99"
+        has: false
+    }, {
+        id: 11,
+        image: "images/Modules/Animals/AnimalsAustralian.png",
+        title: 'Animais',
+        likes: 2,
+        language: "Australian",
+        has: false
     },
     {
         id: 12,
-        image: "images/Modules/Calendar/CalendarAustralian.png",
-        title: 'Calendário (AUSLAN)',
+        image: "images/Modules/Calendar/CalendarAmerican.png",
+        title: 'Calendário',
         likes: 2,
-        language: "Australian",
-        price: "9,99"
+        language: "American",
+        has: false
     },
     {
         id: 13,
-        image: "images/Modules/Alphabet/AlphabetPortuguese.png",
-        title: 'Alfabeto (LGP)',
+        image: "images/Modules/Calendar/CalendarBritish.png",
+        title: 'Calendário',
         likes: 2,
-        language: "Portuguese",
-        price: "9,99"
+        language: "British",
+        has: false
     },
     {
         id: 14,
-        image: "images/Modules/Alphabet/AlphabetAmerican.png",
-        title: 'Alfabeto (ASL)',
+        image: "images/Modules/Calendar/CalendarAustralian.png",
+        title: 'Calendário',
         likes: 2,
-        language: "American",
-        price: "9,99"
+        language: "Australian",
+        has: false
     },
     {
         id: 15,
-        image: "images/Modules/Alphabet/AlphabetBritish.png",
-        title: 'Alfabeto (BSL)',
+        image: "images/Modules/Colors/ColorsAmerican.png",
+        title: 'Cores',
         likes: 2,
-        language: "British",
-        price: "9,99"
+        language: "American",
+        has: false
     },
     {
         id: 16,
-        image: "images/Modules/Alphabet/AlphabetAustralian.png",
-        title: 'Alfabeto (AUSLAN)',
+        image: "images/Modules/Colors/ColorsBritish.png",
+        title: 'Cores',
         likes: 2,
-        language: "Australian",
-        price: "9,99"
+        language: "British",
+        has: false
     },
     {
         id: 17,
-        image: "images/Modules/Numbers/NumbersPortuguese.png",
-        title: 'Números (LGP)',
+        image: "images/Modules/Colors/ColorsAustralian.png",
+        title: 'Cores',
         likes: 2,
-        language: "Portuguese",
-        price: "9,99"
+        language: "Australian",
+        has: false
     },
     {
         id: 18,
-        image: "images/Modules/Numbers/NumbersAmerican.png",
-        title: 'Números (ASL)',
+        image: "images/Modules/Emotions/EmotionsPortuguese.png",
+        title: 'Emoções',
         likes: 2,
-        language: "American",
-        price: "9,99"
+        language: "Portuguese",
+        has: false
     },
     {
         id: 19,
-        image: "images/Modules/Numbers/NumbersBritish.png",
-        title: 'Números (BSL)',
+        image: "images/Modules/Emotions/EmotionsAmerican.png",
+        title: 'Emoções',
         likes: 2,
-        language: "British",
-        price: "9,99"
+        language: "American",
+        has: false
     },
     {
         id: 20,
-        image: "images/Modules/Numbers/NumbersAustralian.png",
-        title: 'Números (AUSLAN)',
-        likes: 2,
-        language: "Australian",
-        price: "9,99"
-    }, {
-        id: 21,
-        image: "images/Modules/Animals/AnimalsPortuguese.png",
-        title: 'Animais (LGP)',
-        likes: 2,
-        language: "Portuguese",
-        price: "9,99"
-    }, {
-        id: 22,
-        image: "images/Modules/Animals/AnimalsAmerican.png",
-        title: 'Animais (ASL)',
-        likes: 2,
-        language: "American",
-        price: "9,99"
-    }, {
-        id: 23,
-        image: "images/Modules/Animals/AnimalsBritish.png",
-        title: 'Animais (BSL)',
+        image: "images/Modules/Emotions/EmotionsBritish.png",
+        title: 'Emoções',
         likes: 2,
         language: "British",
-        price: "9,99"
-    }, {
-        id: 24,
-        image: "images/Modules/Animals/AnimalsAustralian.png",
-        title: 'Animais (AUSLAN)',
+        has: false
+    },
+    {
+        id: 21,
+        image: "images/Modules/Emotions/EmotionsAustralian.png",
+        title: 'Emoções',
         likes: 2,
         language: "Australian",
-        price: "9,99"
-    }
+        has: false
+    },
+    {
+        id: 22,
+        image: "images/Modules/Numbers/NumbersAmerican.png",
+        title: 'Números',
+        likes: 2,
+        language: "American",
+        has: false
+    },
+    {
+        id: 23,
+        image: "images/Modules/Numbers/NumbersBritish.png",
+        title: 'Números',
+        likes: 2,
+        language: "British",
+        has: false
+    },
+    {
+        id: 24,
+        image: "images/Modules/Numbers/NumbersAustralian.png",
+        title: 'Números',
+        likes: 2,
+        language: "Australian",
+        has: false
+    },
 ];
 
 const courseInfo = [
@@ -318,7 +325,7 @@ const courseInfo = [
         id: 1,
         title: 'Cores (LGP)',
         first: "Cores I: Cores básicas",
-        second: 'Cores II: Cores secundárias',
+        second: 'Cores I: Cores básicas',
         third: "Tonalidades",
         fourth: "Frases relacionadas",
         fifth: "Entre outros",
@@ -603,5 +610,5 @@ TODO add info to a real list with all the products the user wants to buy
  */
 $('.modal-footer .btn').click(function () {
     let counter = $('.cart-counter').text();
-    $('.cart-counter').text(+counter.substring(2) + 1);
+    $('.cart-counter').text(+counter.substring(1) + 1);
 });

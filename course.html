@@ -49,7 +49,7 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="profiledrop" data-toggle="dropdown">
                     <img class="profile-photo" alt="profile photo" src="images/4vbLXq8.jpg">
-                    <span>Rafael Gameiro</span>
+                    <span>Administrador</span>
                 </a><!--dropdown-toggle-->
                 <ul class="dropdown-menu dropdown-menu-right mt-n1" id="dropdown-menu">
                     <li>
@@ -74,7 +74,7 @@
             <li class="nav-item mt-2 mr-3">
                 <a class="nav-link" href="profile.html">
                     <img class="profile-photo" alt="profile photo" src="images/4vbLXq8.jpg">
-                    <span>Rafael Gameiro</span>
+                    <span>Administrador</span>
                 </a>
             </li><!--nav-item-->
             <li class="nav-item">
@@ -112,9 +112,15 @@
 
 <div class="container-fluid flex-fill">
     <div class="row h-100">
-        <div class="d-none d-lg-block col-lg-3 ml-3">
+        <div class="col-12 col-lg-3 ml-lg-3 pt-5 p-4">
+            <img class="img-fluid pt-0 pb-3 pb-lg-5 pl-3 pl-lg-5 pr-5 pr-lg-5" alt="course logo" src="images/Modules/Colors/ColorsPortuguese.png">
+            <div class="container-fluid m-0 mt-2 p-0 text-center">
+                <button type="button" class="btn btn-sm btn-buy btn-primary font-weight-bold w-75" data-toggle="modal" data-target="#priceModal">
+                    Comprar
+                </button>
+            </div><!--container-fluid-->
         </div><!--column-->
-        <div class="col-12 col-lg-8 pt-5 pb-3">
+        <div class="col-12 col-lg-8 pt-2 pt-lg-5 pb-3">
             <div class="container-fluid h-100 pt-5 bg-white">
                 <ul style="list-style-type: none; padding-left: 25px;">
                     <li>
@@ -155,6 +161,47 @@
         <i class="far fa-copyright"></i> <i>Copyright 2020.</i>
     </div><!--container-fluid-->
 </footer>
+
+<div class="modal fade" id="priceModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-3 p-2 pt-5">
+                        <div class="container p-0 pt-3">
+                            <img class="img-fluid" alt="package image" src="images/Modules/Colors/ColorsPortuguese.png">
+                        </div><!--container-->
+                    </div><!--column-->
+                    <div class="col-9">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Cores</h4>
+                        </div><!--modal-header-->
+
+                        <div class="modal-body mb-0 pb-0" id="price-modal-body">
+                            Este pacote tem os seguintes conteúdos:
+                            <ul style="list-style-type: disc; padding: 0 0 0 15px;">
+                                <li>Cores I: Cores básicas</li>
+                                <li>Cores I: Cores básicas</li>
+                                <li>Tonalidades</li>
+                                <li>Frases relacionadas</li>
+                                <li>Entre outros</li>
+                            </ul>
+                        </div><!--modal--body-->
+
+                        <div class="modal-footer text-left">
+                            <div class="container font-weight-bold" style="font-size: 120%;">
+                                Total: <span>9,99</span>€
+                                <button type="button" class="btn btn-primary btn-sm float-right" data-dismiss="modal">
+                                    Comprar
+                                </button>
+                            </div><!--container-->
+                        </div><!--modal-footer-->
+                    </div><!--column-->
+                </div><!--row-->
+            </div><!--container-fluid-->
+        </div><!--modal-content-->
+    </div><!--modal-dialog-->
+</div><!--modal-->
 
 <div class="modal fade" id="videoModal1">
     <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -205,5 +252,6 @@
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/course.js"></script>
 </body>
 </html>

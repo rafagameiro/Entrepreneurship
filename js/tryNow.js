@@ -255,21 +255,74 @@ $('.figure').click(function () {
 
 });
 
+$('#signModal').on("hide.bs.modal", function () {
+    $('#login-email').val("");
+    $('#login-pwd').val("");
+    $('.invalid-email').css('visibility', 'hidden');
+    $('#login-error').css('visibility', 'hidden');
+});
+
 const accountEmail = "admin@gmail.com";
 const accountPwd = "admin123";
 
 $('#btn-login').click(function () {
+    $('.invalid-email').css('visibility', 'hidden');
+    $('#login-error').css('visibility', 'hidden');
+
     let email = $('#login-email').val();
     let pwd = $('#login-pwd').val();
 
-    if (email.search(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) === -1)
+    if (email.search(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) === -1) {
+        $('.invalid-email').css('visibility', 'visible');
         return false;
+    }
+    if (email !== accountEmail) {
+        $('#login-error').css('visibility', 'visible');
+        return false;
+    }
 
-    if (email !== accountEmail)
+    if (pwd !== accountPwd) {
+        $('#login-error').css('visibility', 'visible');
         return false;
+    }
 
-    if (pwd !== accountPwd)
+    location.replace("courses.html");
+});
+
+$('#new-user').on("hide.bs.modal", function () {
+    $('#register-email').val("");
+    $('#register-pwd').val("");
+    $('#pwd-confirm').val("");
+    $('#user-name').val("");
+    $('#username').val("");
+    $('#status').val("");
+    $('.invalid-email').css('visibility', 'hidden');
+    $('#pwd-error').css('visibility', 'hidden');
+});
+
+$('#pwd-confirm').keyup(function () {
+    console.log($('#register-pwd').val() + " " +  $('#pwd-confirm').val());
+    if ($('#register-pwd').val() !== $('#pwd-confirm').val())
+        $('#pwd-error').css('visibility', 'visible');
+    else
+        $('#pwd-error').css('visibility', 'hidden');
+});
+
+$('#btn-register').click(function () {
+    $('.invalid-email').css('visibility', 'hidden');
+
+    let email = $('#register-email').val();
+    let name = $('#user-name').val();
+    let username = $('#username').val();
+    let status = $('#status').val();
+    let pwd = $('#register-pwd').val();
+
+    if (email.search(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) === -1) {
+        $('.invalid-email').css('visibility', 'visible');
         return false;
+    }
+
+    //TODO make request to server to check if username is unique and then create the user account
 
     location.replace("courses.html");
 });
