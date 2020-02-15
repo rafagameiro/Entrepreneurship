@@ -10,8 +10,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="package.json" />
+        <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
@@ -31,7 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/css" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
     <property name="nodejs_package_manager_path" value="D:/Program Files/nodejs/node_modules/npm" />
@@ -42,6 +42,7 @@
       <recent name="D:\Rafael Gameiro\Documents\Programming\entrepreneurship\images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Rafael Gameiro\Documents\Programming\entrepreneurship\css" />
       <recent name="D:\Rafael Gameiro\Documents\Programming\entrepreneurship" />
     </key>
   </component>
@@ -73,7 +74,7 @@
       <workItem from="1581526928080" duration="3718000" />
       <workItem from="1581532978863" duration="5999000" />
       <workItem from="1581715807098" duration="12198000" />
-      <workItem from="1581766488854" duration="14888000" />
+      <workItem from="1581766488854" duration="32426000" />
     </task>
     <servers />
   </component>
@@ -85,10 +86,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="583" y="199" key="#Plugins/62.0.1858.1080@62.0.1858.1080" timestamp="1581246464750" />
-    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581526940364">
+    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581802701131">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1581526940364" />
+    <state x="721" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1581802701131" />
     <state x="771" y="295" key="FileChooserDialogImpl" timestamp="1581451120349">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -97,10 +98,10 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="492" y="183" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1581247875633" />
-    <state x="647" y="250" key="run.anything.popup" timestamp="1580571708999">
+    <state x="647" y="250" key="run.anything.popup" timestamp="1581808577182">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="647" y="250" key="run.anything.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1580571708999" />
+    <state x="647" y="250" key="run.anything.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1581808577182" />
     <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1581247834840">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>

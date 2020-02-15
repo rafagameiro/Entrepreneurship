@@ -25,7 +25,7 @@ class coursesList extends React.Component {
                                 'img',
                                 {src: this.props.image, className: "card-img", style: {cursor: "pointer"}}
                             )
-                        ),
+                        )
                     ), e(
                         'div',
                         {className: "col-7"},
@@ -243,7 +243,9 @@ ReactDOM.render(
         return e(coursesList, course)
     }), document.getElementById('courses-catalog'));
 
-
+/**
+ * Selects a flag inside the modal and based on that flag it will list the courses
+ */
 $('.figure').click(function () {
     $('.btn > img').attr('src', $(this).children('img').attr('src'));
     $('#learningLanguageModal').modal('hide');
@@ -255,6 +257,9 @@ $('.figure').click(function () {
 
 });
 
+/**
+ * After closing the modal it will reset all changes that were done
+ */
 $('#signModal').on("hide.bs.modal", function () {
     $('#login-email').val("");
     $('#login-pwd').val("");
@@ -265,6 +270,12 @@ $('#signModal').on("hide.bs.modal", function () {
 const accountEmail = "admin@gmail.com";
 const accountPwd = "admin123";
 
+/**
+ * Logs in user:
+ * Checks if the email address was correctly typed and if not throws an error message,
+ * after that checks if the password and email address correspond to the correct one
+ * If they don't match an error message is shown, and if it not the user is logged in
+ */
 $('#btn-login').click(function () {
     $('.invalid-email').css('visibility', 'hidden');
     $('#login-error').css('visibility', 'hidden');
@@ -289,6 +300,9 @@ $('#btn-login').click(function () {
     location.replace("courses.html");
 });
 
+/**
+ * After closing the modal it will reset all changes that were done
+ */
 $('#new-user').on("hide.bs.modal", function () {
     $('#register-email').val("");
     $('#register-pwd').val("");
@@ -300,14 +314,22 @@ $('#new-user').on("hide.bs.modal", function () {
     $('#pwd-error').css('visibility', 'hidden');
 });
 
+/**
+ * Checks if the typed password in the "password" field is the same as the "Verify password" field
+ */
 $('#pwd-confirm').keyup(function () {
-    console.log($('#register-pwd').val() + " " +  $('#pwd-confirm').val());
     if ($('#register-pwd').val() !== $('#pwd-confirm').val())
         $('#pwd-error').css('visibility', 'visible');
     else
         $('#pwd-error').css('visibility', 'hidden');
 });
 
+/**
+ * Register user:
+ * Checks if the email address was correctly typed and if not throws an error message,
+ * after that checks if the username is unique, and if it is creates a new account with
+ * the typed information
+ */
 $('#btn-register').click(function () {
     $('.invalid-email').css('visibility', 'hidden');
 

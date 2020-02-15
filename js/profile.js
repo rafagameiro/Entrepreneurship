@@ -25,7 +25,7 @@ class coursesList extends React.Component {
                                 'img',
                                 {src: this.props.image, className: "card-img", style: {cursor: "pointer"}}
                             )
-                        ),
+                        )
                     ), e(
                         'div',
                         {className: "col-7"},
@@ -127,47 +127,47 @@ const courses = [
 const achievements = [
     {
         id: 1,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 1'
     },
     {
         id: 2,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 2'
     },
     {
         id: 3,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 3'
     },
     {
         id: 4,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 4'
     },
     {
         id: 5,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 5'
     },
     {
         id: 6,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 6'
     },
     {
         id: 7,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 7'
     },
     {
         id: 8,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 8'
     },
     {
         id: 9,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 9'
     }
 ];

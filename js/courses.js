@@ -45,7 +45,7 @@ class coursesList extends React.Component {
                                 'img',
                                 {src: this.props.image, className: "card-img", style: {cursor: "pointer"}}
                             )
-                        ),
+                        )
                     ), e(
                         'div',
                         {className: "col-7"},
