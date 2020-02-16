@@ -11,18 +11,40 @@
 /* VIDEO */
 
 #videoIntro {
-	height:500px;
-	background-attachment:fixed;
-	background-position:center;
-	background-repeat:no-repeat;
-	background-size:cover;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 video {
-	position:absolute;
-	max-width:100%;
-	height:500px;
-	z-index:-1;
+    position: absolute;
+    max-width: 100%;
+    height: 500px;
+    z-index: -1;
+}
+
+/* FLOATING IMAGE */
+
+#videoIntro img {
+    width: 120px;
+    height: 120px;
+}
+
+@media screen and (max-width: 510px) {
+    #videoIntro img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #videoIntro h1 {
+        font-size: 2.5rem;
+    }
+
+    #videoIntro p {
+        display: flex !important;
+    }
 }
 
 /*-------------------------------------------------------*/
@@ -30,14 +52,31 @@ video {
 /* APP DESCRIPTION AND TRY BUTTON */
 
 @media (min-width: 0px) {
-	.appGenericDescription { margin-bottom:20px; }
-	.containerTryButton { width:100%; }
-	.contentDescription { margin-bottom:20px; }
+    .appGenericDescription {
+        margin-bottom: 20px;
+    }
+
+    .containerTryButton {
+        width: 100%;
+    }
+
+    .contentDescription {
+        margin-bottom: 20px;
+    }
 }
+
 @media (min-width: 992px) {
-	.appGenericDescription { margin:0px; }
-	.containerTryButton { width:75%; }
-	.contentDescription { margin:0px 50px; }
+    .appGenericDescription {
+        margin: 0px;
+    }
+
+    .containerTryButton {
+        width: 75%;
+    }
+
+    .contentDescription {
+        margin: 0px 50px;
+    }
 }
 
 /*-------------------------------------------------------*/
@@ -61,8 +100,23 @@ video {
     object-fit: cover;
 }
 
+/*-------------------------------------------------------*/
 
+/* MODALS */
 
+.modal-header, .modal-footer {
+    border: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+.invalid-email, #login-error, #pwd-error {
+    font-size: small;
+    color: #f44336;
+    visibility: hidden;
+}
 
 
 

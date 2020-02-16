@@ -1,6 +1,12 @@
+/* HTML */
+
 html, body {
     height: 100%;
 }
+
+/*-------------------------------------------------------*/
+
+/* CART CONTENT */
 
 .cart-header {
     font-size: 25px;
@@ -11,10 +17,6 @@ html, body {
     font-size: 15px;
     color: grey;
     border-bottom: 1px solid grey;
-}
-
-.row > div > img {
-    width: 150px;
 }
 
 h5 {
@@ -35,10 +37,18 @@ h5 {
     cursor: pointer;
 }
 
+/*-------------------------------------------------------*/
+
+/* PAYMENT MODAL */
+
 #paypal-info {
     color: #2851a3;
     font-size: small;
 }
+
+/*-------------------------------------------------------*/
+
+/* SUCCESS MODAL */
 
 .fa-check-circle {
     color: #3b997a;

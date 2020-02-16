@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../images/Calliope_Logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/index-login.css">
+    <title>Calliope</title>
+</head>
+<body>
+
+<nav class="navbar navbar-dark navbar-toggleable-sm navbar-expand-sm">
+
+    <a class="navbar-brand" href="index-login.html">
+        <img class="d-none d-md-block img-fluid logo" alt="Calliope Logo" src="../images/Calliope_Logo&Sign.png">
+        <img class="d-md-none img-fluid logo" alt="Calliope Logo" src="../images/Calliope_Logo_Alt.png">
+    </a>
+    <!--navbar-brand-->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="courses.html">Cursos</a>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="forum.html">Forum</a>
+            </li><!--nav-item-->
+        </ul><!--nav-bar-->
+    </div><!--navbar-collapse-->
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item mt-2 mr-3">
+                <img class="flag-icon" src="../images/Flags/Portuguese%20Flag.png">
+            </li><!--nav-item-->
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">
+                    <img class="img-fluid cart-icon" src="../images/shopping-cart-icon.svg">
+                    <span class="cart-counter">0</span>
+                </a><!--nav-link-->
+            </li><!--nav-item-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="profiledrop" data-toggle="dropdown">
+                    <img class="profile-photo" alt="profile photo" src="../images/default_profile_photo.png">
+                    <span>Administrador</span>
+                </a><!--dropdown-toggle-->
+                <ul class="dropdown-menu dropdown-menu-right mt-n1" id="dropdown-menu">
+                    <li>
+                        <div aria-labelledby="profiledrop">
+                            <a class="dropdown-item" href="profile.html">Meu Perfil</a>
+                            <a class="dropdown-item" href="settings.html">Definições</a>
+                            <a class="dropdown-item" href="help.html">Ajuda</a>
+                            <a class="dropdown-item" href="../index.html">Logout</a>
+                        </div>
+                    </li>
+                </ul><!--dropdown-menu-->
+            </li><!--dropdown-->
+        </ul><!--nav-bar-->
+    </div><!--navbar-collapse-->
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item mt-2 mr-3">
+                <img class="flag-icon" src="../images/Flags/Portuguese%20Flag.png">
+                <span>Portugal</span>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="profile.html">
+                    <img class="profile-photo" alt="profile photo" src="../images/default_profile_photo.png">
+                    <span>Administrador</span>
+                </a>
+            </li><!--nav-item-->
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">
+                    <img class="img-fluid cart-icon" src="../images/shopping-cart-icon.svg">
+                    Carrinho <span class="cart-counter">0</span>
+                </a><!--nav-link-->
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="courses.html">Cursos</a>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="forum.html">Forum</a>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="settings.html">Definições</a>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="help.html">Ajuda</a>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="../index.html">Logout</a>
+            </li><!--nav-item-->
+        </ul><!--nav-bar-->
+    </div>
+    <!--navbar-collapse-->
+</nav>
+<!--navbar-->
+
+
+<!-- VIDEO SECTION -->
+<section id="videoIntro">
+    <div class="d-flex h-100 justify-content-center">
+        <video autoplay="autoplay" muted="muted" loop="loop">
+            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+        </video>
+        <div class="d-flex h-100 align-items-center">
+            <div class="w-100 text-center text-white">
+                <img src="../images/Calliope_Logo_Alt.png" class="animated bounce infinite">
+                <h1 class="display-3"><b>CALLIOPE</b></h1>
+                <p class="lead h4">A escola de <b>Língua Gestual</b> indicada para ti!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- "TRY NOW" BUTTON AND DESCRIPTION SECTION -->
+<div class="container-fluid p-4 m-0" style="background-color:#f6f7f9;">
+
+    <!-- INTRO AND BUTTON "TRY NOW" -->
+    <div class="row" style="margin:0">
+        <div class="col-md-6 m-auto">
+            <div class="container-fluid text-center w-75">
+                <p class="lead appGenericDescription"><b>Calliope</b> é uma plataforma online para que possas aprender
+                    Língua Gestual de uma forma fácil e interativa.</p>
+            </div>
+        </div>
+        <div class="col-md-6 m-auto">
+            <div class="container-fluid text-center containerTryButton">
+                <a href="courses.html">
+                    <button class="btn btn-success m-auto" style="font-size:large; width:60%;"> Experimenta já!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- DESCRIPTION -->
+    <div class="row" style="margin:30px 0 0">
+
+        <!-- MULTIPLE COURSES -->
+        <div class="col-md-4 text-center">
+            <div class="container-fluid">
+                <div class="container p-0 circular--portrait">
+                    <img class="rounded-circle" src="../images/homepage_1st.png">
+                </div>
+            </div>
+            <div class="container p-3">
+                <p class="lead contentDescription">
+                    <b>Múltiplos Cursos</b><br>para que possas conhecer mais sobre a Língua Gestual e a sua cultura.
+                </p>
+            </div>
+        </div>
+
+        <!-- ITERACTIVE EXERCISES -->
+        <div class="col-md-4 text-center">
+            <div class="container-fluid">
+                <div class="container p-0 circular--portrait">
+                    <img class="rounded-circle" src="../images/homepage_2nd.png">
+                </div>
+            </div>
+            <div class="container p-3">
+                <p class="lead contentDescription">
+                    <b>Exercícios Iterativos</b><br>para que possas praticar os teus gestos e aperfeiçoá-los.
+                </p>
+            </div>
+        </div>
+
+        <!-- COMMUNITY FORUM -->
+        <div class="col-md-4 text-center">
+            <div class="container-fluid">
+                <div class="container p-0 circular--portrait">
+                    <img class="rounded-circle" src="../images/homepage_3rd.png">
+                </div>
+            </div>
+            <div class="container p-3">
+                <p class="lead contentDescription">
+                    <b>Fórum da Comunidade</b><br>onde podes expor as tuas dúvidas e ajudar outros utilizadores.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- BLUE SECTION -->
+<div class="container p-lg-5 p-3"></div>
+
+
+<!-- FOOTER: COPYRIGHT -->
+<footer>
+    <div class="container-fluid text-center p-4">
+        <i class="far fa-copyright"></i>
+        <i>Copyright 2020.</i>
+    </div>
+</footer>
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

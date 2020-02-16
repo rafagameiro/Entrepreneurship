@@ -99,25 +99,25 @@ class achievementsList extends React.Component {
 const courses = [
     {
         id: 1,
-        image: "images/Modules/Alphabet/AlphabetPortuguese.png",
+        image: "../images/Modules/Alphabet/AlphabetPortuguese.png",
         title: 'Alfabeto',
         progress: "70%"
     },
     {
         id: 2,
-        image: "images/Modules/Calendar/CalendarPortuguese.png",
+        image: "../images/Modules/Calendar/CalendarPortuguese.png",
         title: 'Calendário',
         progress: "10%"
     },
     {
         id: 4,
-        image: "images/Modules/Colors/ColorsPortuguese.png",
+        image: "../images/Modules/Colors/ColorsPortuguese.png",
         title: 'Cores',
         progress: "90%"
     },
     {
         id: 6,
-        image: "images/Modules/Numbers/NumbersPortuguese.png",
+        image: "../images/Modules/Numbers/NumbersPortuguese.png",
         title: 'Números',
         progress: "60%"
     },
@@ -127,47 +127,47 @@ const courses = [
 const achievements = [
     {
         id: 1,
-        image: "images/certificate-icon.png",
+        image: "../images/certificate-icon.png",
         title: 'Achievement 1'
     },
     {
         id: 2,
-        image: "images/certificate-icon.png",
+        image: "../images/certificate-icon.png",
         title: 'Achievement 2'
     },
     {
         id: 3,
-        image: "images/certificate-icon.png",
+        image: "../images/certificate-icon.png",
         title: 'Achievement 3'
     },
     {
         id: 4,
-        image: "images/certificate-icon.png",
+        image: "../images/certificate-icon.png",
         title: 'Achievement 4'
     },
     {
         id: 5,
-        image: "images/certificate-icon.png",
+        image: "../images/certificate-icon.png",
         title: 'Achievement 5'
     },
     {
         id: 6,
-        image: "images/certificate-icon.png",
+        image: "../images/certificate-icon.png",
         title: 'Achievement 6'
     },
     {
         id: 7,
-        image: "images/certificate-icon.png",
+        image: "../images/certificate-icon.png",
         title: 'Achievement 7'
     },
     {
         id: 8,
-        image: "images/certificate-icon.png",
+        image: "../images/certificate-icon.png",
         title: 'Achievement 8'
     },
     {
         id: 9,
-        image: "images/certificate-icon.png",
+        image: "../images/certificate-icon.png",
         title: 'Achievement 9'
     }
 ];

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../images/Calliope_Logo.png">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/help.css">
+    <title>Ajuda</title>
+</head>
+<body class="d-flex flex-column">
+
+<nav class="navbar navbar-dark navbar-toggleable-sm navbar-expand-sm">
+
+    <a class="navbar-brand" href="index-login.html">
+        <img class="d-none d-md-block img-fluid logo" alt="Calliope Logo" src="../images/Calliope_Logo&Sign.png">
+        <img class="d-md-none img-fluid logo" alt="Calliope Logo" src="../images/Calliope_Logo_Alt.png">
+    </a><!--navbar-brand-->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="courses.html">Cursos</a>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="forum.html">Forum</a>
+            </li><!--nav-item-->
+        </ul><!--nav-bar-->
+    </div><!--navbar-collapse-->
+
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item mt-2 mr-3">
+                <img class="flag-icon" src="../images/Flags/Portuguese%20Flag.png">
+            </li><!--nav-item-->
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">
+                    <img class="img-fluid cart-icon" src="../images/shopping-cart-icon.svg">
+                    <span class="cart-counter">0</span>
+                </a><!--nav-link-->
+            </li><!--nav-item-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="profiledrop" data-toggle="dropdown">
+                    <img class="profile-photo" alt="profile photo" src="../images/default_profile_photo.png">
+                    <span>Administrador</span>
+                </a><!--dropdown-toggle-->
+                <ul class="dropdown-menu dropdown-menu-right mt-n1" id="dropdown-menu">
+                    <li>
+                        <div aria-labelledby="profiledrop">
+                            <a class="dropdown-item" href="profile.html">Meu Perfil</a>
+                            <a class="dropdown-item" href="settings.html">Definições</a>
+                            <a class="dropdown-item" href="help.html">Ajuda</a>
+                            <a class="dropdown-item" href="../index.html">Logout</a>
+                        </div>
+                    </li>
+                </ul><!--dropdown-menu-->
+            </li><!--dropdown-->
+        </ul><!--nav-bar-->
+    </div><!--navbar-collapse-->
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item mt-2 mr-3">
+                <img class="flag-icon" src="../images/Flags/Portuguese%20Flag.png">
+                <span>Portugal</span>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="profile.html">
+                    <img class="profile-photo" alt="profile photo" src="../images/default_profile_photo.png">
+                    <span>Administrador</span>
+                </a>
+            </li><!--nav-item-->
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html">
+                    <img class="img-fluid cart-icon" src="../images/shopping-cart-icon.svg">
+                    Carrinho <span class="cart-counter">0</span>
+                </a><!--nav-link-->
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="courses.html">Cursos</a>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="forum.html">Forum</a>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="settings.html">Definições</a>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="help.html">Ajuda</a>
+            </li><!--nav-item-->
+            <li class="nav-item mt-2 mr-3">
+                <a class="nav-link" href="../index.html">Logout</a>
+            </li><!--nav-item-->
+        </ul><!--nav-bar-->
+    </div><!--navbar-collapse-->
+</nav><!--navbar-->
+
+<div class="container mt-5 p-2 pl-3 pr-4 bg-white flex-fill" style="border-radius: 4px;">
+    <h4 class="ml-2 mt-2">Perguntas Frequentes</h4>
+    <div class="container-fluid mt-5 p-0" id="accordion">
+
+        <div class="card">
+            <div class="card-header bg-white">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    Secção 1 &nbsp <i class="fas fa-angle-down"></i>
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <h5>Pergunta 1</h5>
+                    <p class="text-justify">Resposta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum porttitor libero. Fusce sit
+                        amet neque enim. Suspendisse potenti. Vestibulum at laoreet lorem. Nullam faucibus enim id augue pharetra, sit
+                        amet bibendum nunc tempus. Nunc accumsan aliquet turpis, at cursus mauris elementum quis. Vestibulum sagittis
+                        dolor vitae orci ornare tristique. In hac habitasse platea dictumst. Morbi massa justo, mollis eget diam vel,
+                        ultricies suscipit felis. Nulla vestibulum nulla faucibus enim cursus, sed convallis dui tempus. </p>
+                    <hr>
+                    <h5>Pergunta 2</h5>
+                    <p class="text-justify">Resposta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum porttitor libero. Fusce sit
+                        amet neque enim. Suspendisse potenti. Vestibulum at laoreet lorem. Nullam faucibus enim id augue pharetra, sit
+                        amet bibendum nunc tempus. Nunc accumsan aliquet turpis, at cursus mauris elementum quis. Vestibulum sagittis
+                        dolor vitae orci ornare tristique. In hac habitasse platea dictumst. Morbi massa justo, mollis eget diam vel,
+                        ultricies suscipit felis. Nulla vestibulum nulla faucibus enim cursus, sed convallis dui tempus. </p>
+                </div><!--card-body-->
+            </div><!--collapse-->
+        </div><!--card-->
+
+        <div class="card">
+            <div class="card-header bg-white">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                    Secção 2 &nbsp <i class="fas fa-angle-down"></i>
+                </a><!--collapsed-->
+            </div><!--card-header-->
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <h5>Pergunta 3</h5>
+                    <p class="text-justify">Resposta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum porttitor libero. Fusce sit
+                        amet neque enim. Suspendisse potenti. Vestibulum at laoreet lorem. Nullam faucibus enim id augue pharetra, sit
+                        amet bibendum nunc tempus. Nunc accumsan aliquet turpis, at cursus mauris elementum quis. Vestibulum sagittis
+                        dolor vitae orci ornare tristique. In hac habitasse platea dictumst. Morbi massa justo, mollis eget diam vel,
+                        ultricies suscipit felis. Nulla vestibulum nulla faucibus enim cursus, sed convallis dui tempus. </p>
+                    <hr>
+                    <h5>Pergunta 4</h5>
+                    <p class="text-justify">Resposta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum porttitor libero. Fusce sit
+                        amet neque enim. Suspendisse potenti. Vestibulum at laoreet lorem. Nullam faucibus enim id augue pharetra, sit
+                        amet bibendum nunc tempus. Nunc accumsan aliquet turpis, at cursus mauris elementum quis. Vestibulum sagittis
+                        dolor vitae orci ornare tristique. In hac habitasse platea dictumst. Morbi massa justo, mollis eget diam vel,
+                        ultricies suscipit felis. Nulla vestibulum nulla faucibus enim cursus, sed convallis dui tempus. </p>
+                </div><!--card-body-->
+            </div><!--collapse-->
+        </div><!--card-->
+
+        <div class="card">
+            <div class="card-header bg-white">
+                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                    Secção 3 &nbsp <i class="fas fa-angle-down"></i>
+                </a><!--collapsed-->
+            </div><!--card-header-->
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <h5>Pergunta 5</h5>
+                    <p class="text-justify">Resposta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum porttitor libero. Fusce sit
+                        amet neque enim. Suspendisse potenti. Vestibulum at laoreet lorem. Nullam faucibus enim id augue pharetra, sit
+                        amet bibendum nunc tempus. Nunc accumsan aliquet turpis, at cursus mauris elementum quis. Vestibulum sagittis
+                        dolor vitae orci ornare tristique. In hac habitasse platea dictumst. Morbi massa justo, mollis eget diam vel,
+                        ultricies suscipit felis. Nulla vestibulum nulla faucibus enim cursus, sed convallis dui tempus. </p>
+                </div><!--card-body-->
+            </div><!--collapse-->
+        </div><!--card-->
+
+    </div><!--card-->
+</div><!--container-->
+
+<div class="container p-lg-5 p-3">
+</div><!--container-->
+
+<footer>
+    <div class="container-fluid text-center p-4">
+        <i class="far fa-copyright"></i> <i>Copyright 2020.</i>
+    </div><!--container-fluid-->
+</footer>
+
+<div class="modal fade" id="signModal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Login</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div><!--modal-header-->
+
+            <div class="modal-body">
+                <form name="login" accept-charset="utf-8">
+                    <div class="form-group mb-1">
+                        <label for="login-email">Email:</label>
+                        <input type="email" class="form-control" id="login-email" placeholder="Inserir email"
+                               name="login-email">
+                        <span class="invalid-email">Endereço email inválido.</span>
+                    </div><!--form-group-->
+                    <div class="form-group mt-0">
+                        <label for="login-pwd">Password:</label>
+                        <input type="password" class="form-control" id="login-pwd" placeholder="Inserir password"
+                               name="login-pwd">
+                        <span id="login-error">Endereço email ou password incorretos.</span>
+                    </div><!--form-group-->
+                    <div class="container-fluid text-center">
+                        <button type="button" class="btn btn-primary" id="btn-login">Entrar</button>
+                    </div><!--container-fluid-->
+                </form>
+            </div><!--modal-body-->
+
+        </div><!--modal-content-->
+    </div><!--modal-dialog-->
+</div><!--modal-->
+
+<div class="modal fade" id="new-user">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Novo Utilizador</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div><!--modal-header-->
+
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <form>
+                                <div class="form-group">
+                                    <label for="user-name">Primeiro e último nome:</label>
+                                    <input type="text" class="form-control mb-3" id="user-name">
+
+                                    <label for="username">Username:</label>
+                                    <input type="text" class="form-control mb-3" id="username">
+
+                                    <label for="register-email">Email:</label>
+                                    <input type="text" class="form-control" id="register-email">
+                                    <span class="invalid-email mb-0 w-100">Endereço email inválido.</span><br>
+
+                                    <label for="status">Titulo:</label>
+                                    <input type="text" class="form-control mb-3" id="status">
+
+                                    <label for="register-pwd">Nova password:</label>
+                                    <input type="password" class="form-control mb-3" id="register-pwd">
+
+                                    <label for="pwd-confirm">Verificar password:</label>
+                                    <input type="password" class="form-control" id="pwd-confirm">
+                                    <span id="pwd-error">As passwords não são iguais.</span>
+                                </div><!--form-group-->
+                            </form>
+                        </div><!--column-->
+                        <div class="col-12 col-lg-5 text-center">
+                            <div class="container-fluid m-0 p-0 ">
+                                <div class="container p-0 mt-5 mb-5 circular--portrait">
+                                    <img class="rounded-circle" id="photo-preview" alt="profile photo"
+                                         src="../images/default_profile_photo.png">
+                                </div><!--container-->
+                            </div><!--container-fluid-->
+                            <div class="container-fluid w-50">
+                                <button type="button" class="btn btn-sm btn-primary" onclick="chooseFile();">Foto de
+                                    perfil
+                                </button>
+                                <input class="rounded-circle" id="imageInput" style="height:0; overflow:hidden;"
+                                       type="file"
+                                       onchange="readURL(this); getFileData(this);" accept="image/*">
+                            </div><!--container-fluid-->
+                        </div><!--column-->
+                    </div><!--row-->
+                </div><!--container-fluid-->
+            </div><!--modal-body-->
+
+            <div class="modal-footer">
+                <span style="color: #f44336">Não é possível criar um conta agora, por favor tente mais tarde.</span>
+                <button type="button" class="btn btn-primary" id="btn-register" data-dismiss="modal" disabled>Criar conta
+                </button>
+            </div><!--modal-footer-->
+        </div><!--modal-content-->
+    </div><!--modal-dialog-->
+</div><!--modal-->
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/help.js"></script>
+</body>
+</html>

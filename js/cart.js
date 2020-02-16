@@ -26,15 +26,15 @@ class cartList extends React.Component {
             this.generateBreaker(),
             e(
                 'div',
-                {className: "col-2 p-1 pt-3 p-lg-3 text-center"},
+                {className: "col-4 col-md-2 p-1 pt-3 p-lg-3 text-center"},
                 e(
                     'img',
-                    {src: this.props.image}
+                    {className: "img-fluid", src: this.props.image}
                 )
             ),
             e(
                 'div',
-                {className: "col-7 col-sm-8 col-md-9 p-3"},
+                {className: "col-5 col-sm-7 col-md-9 p-3"},
                 e(
                     'a',
                     {href: "course.html", className: "course-name mt-3"},
@@ -59,8 +59,8 @@ class cartList extends React.Component {
 }
 
 let cart = [
-    {id: 1, image: "images/Modules/Colors/ColorsAmerican.png", name: 'Cores', price: '9.99'},
-    {id: 2, image: "images/Modules/Numbers/NumbersBritish.png", name: 'Números', price: '9.99'}
+    {id: 1, image: "../images/Modules/Colors/ColorsAmerican.png", name: 'Cores', price: '9.99'},
+    {id: 2, image: "../images/Modules/Numbers/NumbersBritish.png", name: 'Números', price: '9.99'}
 ];
 
 let totalPrice;
@@ -191,6 +191,6 @@ $('.modal-footer .btn-primary').click(function () {
 $('#successModal').on("show.bs.modal", function () {
     setTimeout(function () {
         $('#successModal').modal('toggle');
-        location.href = "index.html";
+        location.href = "index-login.html";
     }, 800);
 });

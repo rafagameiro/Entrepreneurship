@@ -1,20 +1,14 @@
+/*-------------------------------------------------------*/
+
+/* HTML */
+
 html, body {
     height: 100%;
 }
 
-.modal-header, .modal-footer {
-    border: none;
-}
+/*-------------------------------------------------------*/
 
-label {
-    font-weight: bold;
-}
-
-.invalid-email, #login-error, #pwd-error {
-    font-size: small;
-    color: #f44336;
-    visibility: hidden;
-}
+/* PROFILE PHOTO */
 
 .circular--portrait {
     position: relative;
@@ -33,6 +27,10 @@ label {
     object-fit: cover;
 }
 
+/*-------------------------------------------------------*/
+
+/* SECTIONS */
+
 .card {
     border: none;
 }
@@ -40,10 +38,4 @@ label {
 .card-link, .card-link:hover {
     font-size: large;
     color: black;
-}
-
-@media screen and (min-width: 576px) {
-    #collapsibleNavbar {
-        display: flex !important;
-    }
 }

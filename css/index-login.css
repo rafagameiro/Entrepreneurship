@@ -1,0 +1,7 @@
+/* NAVBAR */
+
+@media screen and (min-width: 576px) {
+    #collapsibleNavbar {
+        display: none !important;
+    }
+}

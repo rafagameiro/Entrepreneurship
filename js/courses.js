@@ -96,7 +96,7 @@ class coursesList extends React.Component {
 const courses = [
     {
         id: 1,
-        image: "images/Modules/Alphabet/AlphabetPortuguese.png",
+        image: "../images/Modules/Alphabet/AlphabetPortuguese.png",
         title: 'Alfabeto',
         likes: 2,
         language: "Portuguese",
@@ -107,7 +107,7 @@ const courses = [
     },
     {
         id: 2,
-        image: "images/Modules/Calendar/CalendarPortuguese.png",
+        image: "../images/Modules/Calendar/CalendarPortuguese.png",
         title: 'Calendário',
         likes: 2,
         language: "Portuguese",
@@ -118,7 +118,7 @@ const courses = [
     },
     {
         id: 3,
-        image: "images/Modules/Colors/ColorsPortuguese.png",
+        image: "../images/Modules/Colors/ColorsPortuguese.png",
         title: 'Cores',
         likes: 1,
         language: "Portuguese",
@@ -129,7 +129,7 @@ const courses = [
     },
     {
         id: 4,
-        image: "images/Modules/Numbers/NumbersPortuguese.png",
+        image: "../images/Modules/Numbers/NumbersPortuguese.png",
         title: 'Números',
         likes: 2,
         language: "Portuguese",
@@ -140,7 +140,7 @@ const courses = [
     },
     {
         id: 5,
-        image: "images/Modules/Alphabet/AlphabetAmerican.png",
+        image: "../images/Modules/Alphabet/AlphabetAmerican.png",
         title: 'Alfabeto',
         likes: 2,
         language: "American",
@@ -151,7 +151,7 @@ const courses = [
     },
     {
         id: 6,
-        image: "images/Modules/Alphabet/AlphabetBritish.png",
+        image: "../images/Modules/Alphabet/AlphabetBritish.png",
         title: 'Alfabeto',
         likes: 2,
         language: "British",
@@ -162,7 +162,7 @@ const courses = [
     },
     {
         id: 7,
-        image: "images/Modules/Alphabet/AlphabetAustralian.png",
+        image: "../images/Modules/Alphabet/AlphabetAustralian.png",
         title: 'Alfabeto',
         likes: 2,
         language: "Australian",
@@ -173,7 +173,7 @@ const courses = [
     },
     {
         id: 8,
-        image: "images/Modules/Animals/AnimalsPortuguese.png",
+        image: "../images/Modules/Animals/AnimalsPortuguese.png",
         title: 'Animais',
         likes: 2,
         language: "Portuguese",
@@ -183,7 +183,7 @@ const courses = [
         has: false
     }, {
         id: 9,
-        image: "images/Modules/Animals/AnimalsAmerican.png",
+        image: "../images/Modules/Animals/AnimalsAmerican.png",
         title: 'Animais',
         likes: 2,
         language: "American",
@@ -193,7 +193,7 @@ const courses = [
         has: false
     }, {
         id: 10,
-        image: "images/Modules/Animals/AnimalsBritish.png",
+        image: "../images/Modules/Animals/AnimalsBritish.png",
         title: 'Animais',
         likes: 2,
         language: "British",
@@ -203,7 +203,7 @@ const courses = [
         has: false
     }, {
         id: 11,
-        image: "images/Modules/Animals/AnimalsAustralian.png",
+        image: "../images/Modules/Animals/AnimalsAustralian.png",
         title: 'Animais',
         likes: 2,
         language: "Australian",
@@ -214,7 +214,7 @@ const courses = [
     },
     {
         id: 12,
-        image: "images/Modules/Calendar/CalendarAmerican.png",
+        image: "../images/Modules/Calendar/CalendarAmerican.png",
         title: 'Calendário',
         likes: 2,
         language: "American",
@@ -225,7 +225,7 @@ const courses = [
     },
     {
         id: 13,
-        image: "images/Modules/Calendar/CalendarBritish.png",
+        image: "../images/Modules/Calendar/CalendarBritish.png",
         title: 'Calendário',
         likes: 2,
         language: "British",
@@ -236,7 +236,7 @@ const courses = [
     },
     {
         id: 14,
-        image: "images/Modules/Calendar/CalendarAustralian.png",
+        image: "../images/Modules/Calendar/CalendarAustralian.png",
         title: 'Calendário',
         likes: 2,
         language: "Australian",
@@ -247,7 +247,7 @@ const courses = [
     },
     {
         id: 15,
-        image: "images/Modules/Colors/ColorsAmerican.png",
+        image: "../images/Modules/Colors/ColorsAmerican.png",
         title: 'Cores',
         likes: 2,
         language: "American",
@@ -258,7 +258,7 @@ const courses = [
     },
     {
         id: 16,
-        image: "images/Modules/Colors/ColorsBritish.png",
+        image: "../images/Modules/Colors/ColorsBritish.png",
         title: 'Cores',
         likes: 2,
         language: "British",
@@ -269,7 +269,7 @@ const courses = [
     },
     {
         id: 17,
-        image: "images/Modules/Colors/ColorsAustralian.png",
+        image: "../images/Modules/Colors/ColorsAustralian.png",
         title: 'Cores',
         likes: 2,
         language: "Australian",
@@ -280,7 +280,7 @@ const courses = [
     },
     {
         id: 18,
-        image: "images/Modules/Emotions/EmotionsPortuguese.png",
+        image: "../images/Modules/Emotions/EmotionsPortuguese.png",
         title: 'Emoções',
         likes: 2,
         language: "Portuguese",
@@ -291,7 +291,7 @@ const courses = [
     },
     {
         id: 19,
-        image: "images/Modules/Emotions/EmotionsAmerican.png",
+        image: "../images/Modules/Emotions/EmotionsAmerican.png",
         title: 'Emoções',
         likes: 2,
         language: "American",
@@ -302,7 +302,7 @@ const courses = [
     },
     {
         id: 20,
-        image: "images/Modules/Emotions/EmotionsBritish.png",
+        image: "../images/Modules/Emotions/EmotionsBritish.png",
         title: 'Emoções',
         likes: 2,
         language: "British",
@@ -313,7 +313,7 @@ const courses = [
     },
     {
         id: 21,
-        image: "images/Modules/Emotions/EmotionsAustralian.png",
+        image: "../images/Modules/Emotions/EmotionsAustralian.png",
         title: 'Emoções',
         likes: 2,
         language: "Australian",
@@ -324,7 +324,7 @@ const courses = [
     },
     {
         id: 22,
-        image: "images/Modules/Numbers/NumbersAmerican.png",
+        image: "../images/Modules/Numbers/NumbersAmerican.png",
         title: 'Números',
         likes: 2,
         language: "American",
@@ -335,7 +335,7 @@ const courses = [
     },
     {
         id: 23,
-        image: "images/Modules/Numbers/NumbersBritish.png",
+        image: "../images/Modules/Numbers/NumbersBritish.png",
         title: 'Números',
         likes: 2,
         language: "British",
@@ -346,7 +346,7 @@ const courses = [
     },
     {
         id: 24,
-        image: "images/Modules/Numbers/NumbersAustralian.png",
+        image: "../images/Modules/Numbers/NumbersAustralian.png",
         title: 'Números',
         likes: 2,
         language: "Australian",
@@ -382,7 +382,7 @@ function listCourses(list) {
 $('.figure').click(function () {
     $('.btn > img').attr('src', $(this).children('img').attr('src'));
     $('#learningLanguageModal').modal('hide');
-    let language = $(this).children('img').attr('src').substring(13).split(" ")[0];
+    let language = $(this).children('img').attr('src').substring(16).split(" ")[0];
     ReactDOM.render(
         courses.filter(course => course.language === language).map(course => {
             return e(coursesList, course)

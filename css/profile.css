@@ -1,3 +1,5 @@
+/* HTML */
+
 html, body {
     height: 100%;
 }
@@ -5,6 +7,10 @@ html, body {
 body {
     background-color: #f6f7f9;
 }
+
+/*-------------------------------------------------------*/
+
+/* PROFILE HEADER */
 
 #profile-header {
     background-color: #3c7bef;
@@ -63,45 +69,8 @@ body {
     width: 70%;
 }
 
-#profile-achievements {
-    cursor: pointer;
-}
-
-#profile-achievements:hover {
-    text-decoration: underline;
-}
-
-#achievements {
-    background-color: #6aade1;
-}
-
 .fa-wrench {
     cursor: pointer;
-}
-
-.modal-header, .modal-footer {
-    border: none;
-}
-
-label {
-    font-weight: bold;
-}
-
-.invalid-email, #pwd-error {
-    font-size: small;
-    color: #f44336;
-    visibility: hidden;
-}
-
-.achievement-medal {
-    position: relative;
-    min-width: 100px;
-    min-height: 100px;
-    width: 5vw;
-    height: 5vw;
-    max-width: 5vw;
-    max-height: 5vw;
-    overflow: hidden;
 }
 
 @media screen and (max-width: 550px) {
@@ -133,4 +102,49 @@ label {
     #profile-status, #profile-experience, #profile-achievements {
         font-size: 2.5vw;
     }
+}
+
+/*-------------------------------------------------------*/
+
+/* ACHIEVEMENTS */
+
+#profile-achievements {
+    cursor: pointer;
+}
+
+#profile-achievements:hover {
+    text-decoration: underline;
+}
+
+#achievements {
+    background-color: #6aade1;
+}
+
+.achievement-medal {
+    position: relative;
+    min-width: 100px;
+    min-height: 100px;
+    width: 5vw;
+    height: 5vw;
+    max-width: 5vw;
+    max-height: 5vw;
+    overflow: hidden;
+}
+
+/*-------------------------------------------------------*/
+
+/* EDIT PROFILE MODAL */
+
+.modal-header, .modal-footer {
+    border: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+.invalid-email, #pwd-error {
+    font-size: small;
+    color: #f44336;
+    visibility: hidden;
 }
