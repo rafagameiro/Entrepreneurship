@@ -1,3 +1,5 @@
+/* HTML */
+
 html, body {
     height: 100%;
 }
@@ -5,6 +7,10 @@ html, body {
 body {
     background-color: #f6f7f9;
 }
+
+/*-------------------------------------------------------*/
+
+/* FILTERS */
 
 #filter-header {
     background-color: #3c7bef;
@@ -21,6 +27,10 @@ body {
     cursor: pointer;
 }
 
+/*-------------------------------------------------------*/
+
+/* LEARNING LANGUAGE MODAL */
+
 .figure {
     cursor: pointer;
 }
@@ -28,6 +38,10 @@ body {
 .figure-caption {
     font-size: 18px;
 }
+
+/*-------------------------------------------------------*/
+
+/* COURSE CARD CONTENT */
 
 .fa-heart {
     color: deeppink;

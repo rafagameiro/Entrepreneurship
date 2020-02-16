@@ -1,6 +1,12 @@
+/* BODY */
+
 body {
     background-color: #b5d7f4;
 }
+
+/*-------------------------------------------------------*/
+
+/* NAVBAR */
 
 .navbar, footer, #dropdown-menu {
     background-color: #2851a3;
@@ -45,6 +51,22 @@ body {
     background-color: #3c7bef;
 }
 
+@media screen and (min-width: 576px) {
+    #collapsibleNavbar {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        width: 40px;
+    }
+}
+
+/*-------------------------------------------------------*/
+
+/* BUTTONS */
+
 .btn-primary {
     background-color: #1566db;
 }
@@ -67,16 +89,4 @@ body {
 
 .btn-danger {
     background-color: #f44336;
-}
-
-@media screen and (min-width: 576px) {
-    #collapsibleNavbar {
-        display: none !important;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .logo {
-        width: 40px;
-    }
 }

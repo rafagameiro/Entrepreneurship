@@ -184,6 +184,9 @@ ReactDOM.render(
     }), document.getElementById('achievements-list')
 );
 
+/**
+ * After opening the modal it will set the fields with the info from the use profile
+ */
 $('#edit-profile').on("show.bs.modal", function () {
     $('#email').val("admin@gmail.com");
     $('#pwd').val("");
@@ -195,6 +198,9 @@ $('#edit-profile').on("show.bs.modal", function () {
     $('#pwd-error').css('visibility', 'hidden');
 });
 
+/**
+ * After closing the modal it will reset all changes that were done
+ */
 $('#edit-profile').on("hide.bs.modal", function () {
     $('#email').val("");
     $('#pwd').val("");
@@ -206,6 +212,9 @@ $('#edit-profile').on("hide.bs.modal", function () {
     $('#pwd-error').css('visibility', 'hidden');
 });
 
+/**
+ * Checks if the typed password in the "password" field is the same as the "Verify password" field
+ */
 $('#pwd-confirm').keyup(function () {
     console.log($('#pwd').val() + " " +  $('#pwd-confirm').val());
     if ($('#pwd').val() !== $('#pwd-confirm').val())
@@ -214,6 +223,11 @@ $('#pwd-confirm').keyup(function () {
         $('#pwd-error').css('visibility', 'hidden');
 });
 
+/**
+ * Update user:
+ * Checks if the email address was correctly typed and if not throws an error message,
+ * after that updates the user account information with the typed information
+ */
 $('.modal-footer > .btn-primary').click(function () {
     $('.invalid-email').css('visibility', 'hidden');
     console.log("hi");
