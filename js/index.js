@@ -38,7 +38,7 @@ $('#btn-login').click(function () {
         return false;
     }
 
-    location.replace("index-login.html");
+    location.replace("html/index-login.html");
 });
 
 /**
@@ -87,7 +87,7 @@ $('#btn-register').click(function () {
 
     //TODO make request to server to check if username is unique and then create the user account
 
-    location.replace("index-login.html");
+    location.replace("html/index-login.html");
 });
 
 /*
