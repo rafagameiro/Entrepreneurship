@@ -113,7 +113,7 @@ const courses = [
         id: 4,
         image: "../images/Modules/Colors/ColorsPortuguese.png",
         title: 'Cores',
-        progress: "90%"
+        progress: "18%"
     },
     {
         id: 6,

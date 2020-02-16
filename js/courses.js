@@ -8,8 +8,8 @@ class coursesList extends React.Component {
     renderLock() {
         if (!this.props.has)
             return e(
-                'div',
-                {className: "container-fluid p-0"},
+                'a',
+                {href: "course-lock.html", style: {textDecoration: "none"}},
                 e(
                     'span',
                     {className: "m-0 p-0", style: {position: "absolute", top: "7%", right: "-5%", zIndex: "1"}},
@@ -29,14 +29,41 @@ class coursesList extends React.Component {
             );
         else
             return e(
-                'img',
-                {
-                    src: this.props.image,
-                    className: "card-img",
-                    style: {cursor: "pointer"}
-                }
+                'a',
+                {href: "course.html", style: {textDecoration: "none"}},
+                e(
+                    'img',
+                    {
+                        src: this.props.image,
+                        className: "card-img",
+                        style: {cursor: "pointer"}
+                    }
+                )
             );
 
+    }
+
+    renderTitle() {
+        if(!this.props.has)
+            return e(
+                'a',
+                {href: "course-lock.html", style: {textDecoration: "none"}},
+                e(
+                    'h5',
+                    {className: "card-title mt-2", style: {cursor: "pointer"}},
+                    this.props.title
+                )
+            );
+        else
+            return e(
+                'a',
+                {href: "course.html", style: {textDecoration: "none"}},
+                e(
+                    'h5',
+                    {className: "card-title mt-2", style: {cursor: "pointer"}},
+                    this.props.title
+                )
+            )
     }
 
     renderStars() {
@@ -115,26 +142,14 @@ class coursesList extends React.Component {
                     e(
                         'div',
                         {className: "col-5 pb-1 pt-4"},
-                        e(
-                            'a',
-                            {href: "course.html", style: {textDecoration: "none"}},
-                            this.renderLock()
-                        )
+                        this.renderLock()
                     ), e(
                         'div',
                         {className: "col-7"},
                         e(
                             'div',
                             {className: "card-body m-0 h-100"},
-                            e(
-                                'a',
-                                {href: "course.html", style: {textDecoration: "none"}},
-                                e(
-                                    'h5',
-                                    {className: "card-title mt-2", style: {cursor: "pointer"}},
-                                    this.props.title
-                                )
-                            ),
+                            this.renderTitle(),
                             e(
                                 'div',
                                 {className: "container-fluid m-0 mt-1 mb-2 p-0", style: {letterSpacing: "10px"}},

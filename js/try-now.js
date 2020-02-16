@@ -74,7 +74,7 @@ class coursesList extends React.Component {
                         {className: "col-5 p-1 pt-4"},
                         e(
                             'a',
-                            {href: "course.html", style: {textDecoration: "none"}},
+                            {href: "course-try-now.html", style: {textDecoration: "none"}},
                            this.renderLock()
                         )
                     ), e(
@@ -85,7 +85,7 @@ class coursesList extends React.Component {
                             {className: "card-body m-0 h-100"},
                             e(
                                 'a',
-                                {href: "course.html", style: {textDecoration: "none"}},
+                                {href: "course-try-now.html", style: {textDecoration: "none"}},
                                 e(
                                     'h5',
                                     {className: "card-title mt-2", style: {cursor: "pointer"}},
@@ -386,8 +386,6 @@ $('.difficulty-setter').click(function () {
             $('#star-' + (i + 1)).removeClass('fas');
         }
     }
-
-    console.log(difficulty);
 
     if ($('#difficulty-filter').css('background-color') === "rgb(59, 153, 122)")
         clearFilter(1);
