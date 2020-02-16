@@ -34,7 +34,7 @@ class coursesList extends React.Component {
                             {className: "card-body m-0 h-100"},
                             e(
                                 'a',
-                                {href: "course.html", style: {textDecoration: "none"}},
+                                {href: "course.html", style: {textDecoration: "none", color: "black"}},
                                 e(
                                     'h5',
                                     {className: "card-title mt-2 mb-5", style: {cursor: "pointer"}},
@@ -99,86 +99,75 @@ class achievementsList extends React.Component {
 const courses = [
     {
         id: 1,
-        image: "images/Modules/Colors/ColorsPortuguese.png",
-        title: 'Cores (LGP)',
-        progress: "90%"
+        image: "images/Modules/Alphabet/AlphabetPortuguese.png",
+        title: 'Alfabeto',
+        progress: "70%"
     },
     {
         id: 2,
-        image: "images/Modules/Emotions/EmotionsPortuguese.png",
-        title: 'Emoções (LGP)',
-        progress: "50%"
-    },
-    {
-        id: 3,
         image: "images/Modules/Calendar/CalendarPortuguese.png",
-        title: 'Calendário (LGP)',
+        title: 'Calendário',
         progress: "10%"
     },
     {
         id: 4,
-        image: "images/Modules/Alphabet/AlphabetPortuguese.png",
-        title: 'Alfabeto (LGP)',
-        progress: "70%"
-    },
-    {
-        id: 5,
-        image: "images/Modules/Numbers/NumbersPortuguese.png",
-        title: 'Números (LGP)',
-        progress: "60%"
+        image: "images/Modules/Colors/ColorsPortuguese.png",
+        title: 'Cores',
+        progress: "90%"
     },
     {
         id: 6,
-        image: "images/Modules/Animals/AnimalsPortuguese.png",
-        title: 'Animais (LGP)',
-        progress: "0%"
-    }
+        image: "images/Modules/Numbers/NumbersPortuguese.png",
+        title: 'Números',
+        progress: "60%"
+    },
+
 ];
 
 const achievements = [
     {
         id: 1,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 1'
     },
     {
         id: 2,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 2'
     },
     {
         id: 3,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 3'
     },
     {
         id: 4,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 4'
     },
     {
         id: 5,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 5'
     },
     {
         id: 6,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 6'
     },
     {
         id: 7,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 7'
     },
     {
         id: 8,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 8'
     },
     {
         id: 9,
-        image: "images/4vbLXq8.jpg",
+        image: "images/certificate-icon.png",
         title: 'Achievement 9'
     }
 ];
@@ -194,6 +183,55 @@ ReactDOM.render(
         return e(achievementsList, achievement)
     }), document.getElementById('achievements-list')
 );
+
+$('#edit-profile').on("show.bs.modal", function () {
+    $('#email').val("admin@gmail.com");
+    $('#pwd').val("");
+    $('#pwd-confirm').val("");
+    $('#user-name').val("Administrador");
+    $('#username').val("admin");
+    $('#status').val("Supervisor");
+    $('.invalid-email').css('visibility', 'hidden');
+    $('#pwd-error').css('visibility', 'hidden');
+});
+
+$('#edit-profile').on("hide.bs.modal", function () {
+    $('#email').val("");
+    $('#pwd').val("");
+    $('#pwd-confirm').val("");
+    $('#user-name').val("");
+    $('#username').val("");
+    $('#status').val("");
+    $('.invalid-email').css('visibility', 'hidden');
+    $('#pwd-error').css('visibility', 'hidden');
+});
+
+$('#pwd-confirm').keyup(function () {
+    console.log($('#pwd').val() + " " +  $('#pwd-confirm').val());
+    if ($('#pwd').val() !== $('#pwd-confirm').val())
+        $('#pwd-error').css('visibility', 'visible');
+    else
+        $('#pwd-error').css('visibility', 'hidden');
+});
+
+$('.modal-footer > .btn-primary').click(function () {
+    $('.invalid-email').css('visibility', 'hidden');
+    console.log("hi");
+    let email = $('#email').val();
+    let name = $('#user-name').val();
+    let username = $('#username').val();
+    let status = $('#status').val();
+    let pwd = $('#pwd').val();
+
+    if (email.search(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) === -1) {
+        $('.invalid-email').css('visibility', 'visible');
+        return false;
+    }
+
+    //TODO update user account info
+
+    location.replace("profile.html");
+});
 
 /*
 After selecting a file, it will save its name into the variable filename

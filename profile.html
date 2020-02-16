@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/profile.css">
     <title>Meu Perfil</title>
 </head>
-<body>
+<body class="d-flex flex-column">
 
 <nav class="navbar navbar-dark navbar-toggleable-sm navbar-expand-sm">
 
@@ -48,8 +48,8 @@
             </li><!--nav-item-->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="profiledrop" data-toggle="dropdown">
-                    <img class="profile-photo" alt="profile photo" src="images/4vbLXq8.jpg">
-                    <span>Rafael Gameiro</span>
+                    <img class="profile-photo" alt="profile photo" src="images/default_profile_photo.png">
+                    <span>Administrador</span>
                 </a><!--dropdown-toggle-->
                 <ul class="dropdown-menu dropdown-menu-right mt-n1" id="dropdown-menu">
                     <li>
@@ -73,8 +73,8 @@
             </li><!--nav-item-->
             <li class="nav-item mt-2 mr-3">
                 <a class="nav-link" href="profile.html">
-                    <img class="profile-photo" alt="profile photo" src="images/4vbLXq8.jpg">
-                    <span>Rafael Gameiro</span>
+                    <img class="profile-photo" alt="profile photo" src="images/default_profile_photo.png">
+                    <span>Administrador</span>
                 </a>
             </li><!--nav-item-->
             <li class="nav-item">
@@ -107,14 +107,14 @@
         <div class="col-6 col-lg-3 text-center">
             <div class="container-fluid m-0 p-0 ">
                 <div class="container p-0 mt-5 mb-5 circular--portrait">
-                    <img class="rounded-circle" alt="profile photo" src="images/4vbLXq8.jpg">
+                    <img class="rounded-circle" alt="profile photo" src="images/default_profile_photo.png">
                 </div><!--container-->
             </div><!--container-fluid-->
         </div><!--column-->
         <div class="col-6 col-lg-4 p-0 mt-0">
             <div id="profile-names" class="mt-4 mt-lg-5 mb-5 h-50 p-0">
-                <span id="profile-name">Rafael Gameiro</span><br>
-                <span id="profile-status">Estudante</span>
+                <span id="profile-name">Administrador</span><br>
+                <span id="profile-status">Supervisor</span>
             </div><!--text-->
         </div><!--column-->
         <div class="col-12 col-lg-4 text-left">
@@ -159,7 +159,7 @@
     </div><!--row-->
 </div><!--container-fluid-->
 
-<div class="container p-lg-5 p-3">
+<div class="container flex-fill  p-lg-5 p-3">
 </div><!--container-->
 
 <footer>
@@ -183,29 +183,31 @@
                             <form>
                                 <div class="form-group">
                                     <label for="user-name">Primeiro e último nome:</label>
-                                    <input type="text" class="form-control" id="user-name">
+                                    <input type="text" class="form-control mb-3" id="user-name">
 
                                     <label for="username">Username:</label>
-                                    <input type="text" class="form-control" id="username">
+                                    <input type="text" class="form-control mb-3" id="username">
 
                                     <label for="email">Email:</label>
                                     <input type="text" class="form-control" id="email">
+                                    <span class="invalid-email mb-0 w-100">Endereço email inválido.</span><br>
 
                                     <label for="status">Titulo:</label>
-                                    <input type="text" class="form-control" id="status">
+                                    <input type="text" class="form-control mb-3" id="status">
 
                                     <label for="pwd">Nova password:</label>
-                                    <input type="password" class="form-control" id="pwd">
+                                    <input type="password" class="form-control mb-3" id="pwd">
 
                                     <label for="pwd-confirm">Verificar password:</label>
                                     <input type="password" class="form-control" id="pwd-confirm">
+                                    <span id="pwd-error">As passwords não são iguais.</span>
                                 </div><!--form-group-->
                             </form>
                         </div><!--column-->
                         <div class="col-12 col-lg-5 text-center">
                             <div class="container-fluid m-0 p-0 ">
                                 <div class="container p-0 mt-5 mb-5 circular--portrait">
-                                    <img class="rounded-circle" id="photo-preview" alt="profile photo" src="images/4vbLXq8.jpg">
+                                    <img class="rounded-circle" id="photo-preview" alt="profile photo" src="images/default_profile_photo.png">
                                 </div><!--container-->
                             </div><!--container-fluid-->
                             <div class="container-fluid w-50">
@@ -221,7 +223,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar
                 </button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar
+                <button type="button" class="btn btn-primary">Guardar
                 </button>
             </div><!--modal-footer-->
         </div><!--modal-content-->

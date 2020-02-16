@@ -48,8 +48,8 @@
             </li><!--nav-item-->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="profiledrop" data-toggle="dropdown">
-                    <img class="profile-photo" alt="profile photo" src="images/4vbLXq8.jpg">
-                    <span>Rafael Gameiro</span>
+                    <img class="profile-photo" alt="profile photo" src="images/default_profile_photo.png">
+                    <span>Administrador</span>
                 </a><!--dropdown-toggle-->
                 <ul class="dropdown-menu dropdown-menu-right mt-n1" id="dropdown-menu">
                     <li>
@@ -73,8 +73,8 @@
             </li><!--nav-item-->
             <li class="nav-item mt-2 mr-3">
                 <a class="nav-link" href="profile.html">
-                    <img class="profile-photo" alt="profile photo" src="images/4vbLXq8.jpg">
-                    <span>Rafael Gameiro</span>
+                    <img class="profile-photo" alt="profile photo" src="images/default_profile_photo.png">
+                    <span>Administrador</span>
                 </a>
             </li><!--nav-item-->
             <li class="nav-item">
@@ -105,48 +105,50 @@
 
 <!-- FILTROS -->
 <div class="container-fluid mb-4 p-3" id="filter-header">
-    <div class="container-fluid w-50">
+    <div class="container-fluid w-75">
 
-        <div class="row mb-3 align-self-center justify-content-center">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#learningLanguageModal">
+        <div class="row mb-2 align-self-center justify-content-center">
+            <button type="button" class="btn btn-primary mb-lg-0 mb-2" data-toggle="modal"
+                    data-target="#learningLanguageModal">
                 Idioma
                 <img class="flag-icon" src="images/Flags/Portuguese%20Flag.png">
             </button>
 
-            &nbsp &nbsp &nbsp &nbsp <!-- Space Code -->
+            <span class="d-none d-lg-block">&nbsp &nbsp &nbsp &nbsp</span> <!-- Space Code -->
 
-            <div class="m-0" style="background-color:#1566DB; border-radius:5px; height:38.4px">
-                <p style="padding:6px 12px">Dificuldade:
+            <div class="m-0 mb-lg-0 mb-2" id="difficulty-filter">
+                <p style="padding:6px 12px" >
+                    <span >Dificuldade:</span>
 
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                    <i class="far fa-star difficulty-setter" id="star-1"></i>
+                    <i class="far fa-star difficulty-setter" id="star-2"></i>
+                    <i class="far fa-star difficulty-setter" id="star-3"></i>
                 </p>
             </div>
         </div><!--row-->
 
         <div class="row align-self-center justify-content-center">
-            <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-primary active">
-                    <input type="checkbox" checked autocomplete="off"> Versão Kids
+            <div class="btn-group-toggle mb-lg-0 mb-2" data-toggle="buttons">
+                <label class="btn btn-primary" id="kids-filter">
+                    <input type="checkbox" autocomplete="off"> Versão Kids
                     <i class="far fa-laugh"></i>
                 </label><!--btn-->
             </div><!--btn-group-toggle-->
 
-            &nbsp &nbsp &nbsp &nbsp <!-- Space Code -->
+            <span class="d-none d-lg-block">&nbsp &nbsp &nbsp &nbsp</span> <!-- Space Code -->
 
-            <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-primary active">
-                    <input type="checkbox" checked autocomplete="off"> Para Comprar
+            <div class="btn-group-toggle mb-lg-0 mb-2" data-toggle="buttons">
+                <label class="btn btn-primary m-0" id="can-buy-filter">
+                    <input type="checkbox" autocomplete="off"> Para Comprar
                     <i class="fas fa-shopping-cart"></i>
                 </label><!--btn-->
             </div><!--btn-group-toggle-->
 
-            &nbsp &nbsp &nbsp &nbsp <!-- Space Code -->
+            <span class="d-none d-lg-block">&nbsp &nbsp &nbsp &nbsp</span> <!-- Space Code -->
 
-            <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-primary active">
-                    <input type="checkbox" checked autocomplete="off"> Em Promoção
+            <div class="btn-group-toggle  mb-lg-0 mb-2" data-toggle="buttons">
+                <label class="btn btn-primary" id="promotion-filter">
+                    <input type="checkbox" autocomplete="off"> Em Promoção
                     <i class="fas fa-percent"></i>
                 </label><!--btn-->
             </div><!--btn-group-toggle-->

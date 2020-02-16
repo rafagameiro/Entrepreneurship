@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="images/Calliope_Logo.png">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/cart.css">
     <title>Carrinho</title>
@@ -47,8 +48,8 @@
             </li><!--nav-item-->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="profiledrop" data-toggle="dropdown">
-                    <img class="profile-photo" alt="profile photo" src="images/4vbLXq8.jpg">
-                    <span>Rafael Gameiro</span>
+                    <img class="profile-photo" alt="profile photo" src="images/dafault_profile_photo3.png">
+                    <span>Administrador</span>
                 </a><!--dropdown-toggle-->
                 <ul class="dropdown-menu dropdown-menu-right mt-n1" id="dropdown-menu">
                     <li>
@@ -72,8 +73,8 @@
             </li><!--nav-item-->
             <li class="nav-item mt-2 mr-3">
                 <a class="nav-link" href="profile.html">
-                    <img class="profile-photo" alt="profile photo" src="images/4vbLXq8.jpg">
-                    <span>Rafael Gameiro</span>
+                    <img class="profile-photo" alt="profile photo" src="images/dafault_profile_photo.PNG">
+                    <span>Administrador</span>
                 </a>
             </li><!--nav-item-->
             <li class="nav-item">
@@ -118,8 +119,8 @@
         </div><!--column-->
         <div class="col-12 col-lg-2">
             <div class="container p-3 bg-white text-center">
-                <h5>Subtotal(2 itens): 19.98€</h5>
-                <button type="button" class="btn btn-primary mt-4 mb-1" data-toggle="modal" data-target="#paymentModal">
+                <h5>Total:</h5><h3 id="items-price">€</h3>
+                <button type="button" class="btn btn-primary mt-4 mb-1" id="btn-checkout" data-toggle="modal" data-target="#paymentModal">
                     Avançar para pagamento
                 </button>
             </div><!--container-->
@@ -195,17 +196,35 @@
                             <label class="d-none d-lg-block" for="email1">Endereço email:</label>
                             <input class="d-none d-lg-block form-control w-50" id="email1">
 
-                            <label for="email2">Endereço email:</label>
+                            <label class="d-lg-none d-block" for="email2">Endereço email:</label>
                             <input class="d-lg-none d-block form-control w-100" id="email2">
+                            <span id="paypal-info">Por favor insira um endereço de email válido.</span>
                         </div><!--form-group-->
                     </div>
                 </div><!--tab-content-->
             </div><!--modal-body-->
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-toggle="tab" data-target="#start">cancelar</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Avançar</button>
+                <button type="button" class="btn btn-secondary">cancelar</button>
+                <button type="button" class="btn btn-primary" disabled>Avançar</button>
             </div><!--modal-footer-->
+        </div><!--modal-content-->
+    </div><!--modal-dialog-->
+</div><!--modal-->
+
+<div class="modal fade" id="successModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="container-fluid p-3 text-center">
+                    <i class="fas fa-check-circle fa-9x"></i>
+                    <div class="container-fluid mt-5 p-2 h5">
+                        Operação efetuada com sucesso.
+                    </div><!--container-fluid-->
+                </div><!--container-fluid-->
+            </div><!--modal-body-->
+
         </div><!--modal-content-->
     </div><!--modal-dialog-->
 </div><!--modal-->

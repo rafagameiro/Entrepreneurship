@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #f6f7f9;
 }
@@ -83,6 +87,12 @@ label {
     font-weight: bold;
 }
 
+.invalid-email, #pwd-error {
+    font-size: small;
+    color: #f44336;
+    visibility: hidden;
+}
+
 .achievement-medal {
     position: relative;
     min-width: 100px;
@@ -92,12 +102,6 @@ label {
     max-width: 5vw;
     max-height: 5vw;
     overflow: hidden;
-}
-
-.package {
-    width: 130px;
-    height: 170px;
-    background-color: #1c7430;
 }
 
 @media screen and (max-width: 550px) {

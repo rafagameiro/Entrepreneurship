@@ -35,3 +35,12 @@ h5 {
     cursor: pointer;
 }
 
+#paypal-info {
+    color: #2851a3;
+    font-size: small;
+}
+
+.fa-check-circle {
+    color: #3b997a;
+}
+
